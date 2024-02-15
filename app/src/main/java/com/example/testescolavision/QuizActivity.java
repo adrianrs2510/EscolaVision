@@ -80,6 +80,12 @@ public class QuizActivity extends AppCompatActivity {
     };
     private int mCurrentIndex = 0;
 
+    int area1;
+    int area2;
+    int area3;
+    int area4;
+    int area5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,5 +142,30 @@ public class QuizActivity extends AppCompatActivity {
     private void updateQuestion(){
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
+    }
+
+    private void checkAnswer(int answerValue) {
+        int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
+        int messageResId = 0;
+        switch (mCurrentIndex){
+            case 1,6,11,16,21,26 ->{
+                area1 += answerValue;
+            }
+            case 2,7,12,17,22,27 ->{
+                area2 += answerValue;
+            }
+            case 3,8,13,18,23,28 ->{
+                area3 += answerValue;
+            }
+            case 4,9,14,19,24,29 ->{
+                area4 += answerValue;
+            }
+            case 5,10,15,20,25,30 ->{
+                area5 += answerValue;
+            }
+        }
+
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
+                .show();
     }
 }
