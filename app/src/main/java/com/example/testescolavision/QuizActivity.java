@@ -97,36 +97,28 @@ public class QuizActivity extends AppCompatActivity {
         mBoton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(QuizActivity.this,
-                        R.string.correct_toast,
-                        Toast.LENGTH_LONG).show();
+                checkAnswer(0);
             }
         });
         mBoton2 = findViewById(R.id.boton2);
         mBoton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(QuizActivity.this,
-                        R.string.incorrect_toast,
-                        Toast.LENGTH_LONG).show();
+                checkAnswer(1);
             }
         });
         mBoton3 = findViewById(R.id.boton3);
         mBoton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(QuizActivity.this,
-                        R.string.correct_toast,
-                        Toast.LENGTH_LONG).show();
+                checkAnswer(2);
             }
         });
         mBoton4 = findViewById(R.id.boton4);
         mBoton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(QuizActivity.this,
-                        R.string.incorrect_toast,
-                        Toast.LENGTH_LONG).show();
+                checkAnswer(3);
             }
         });
 
