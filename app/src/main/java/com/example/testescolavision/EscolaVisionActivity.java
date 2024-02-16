@@ -1,14 +1,14 @@
 package com.example.testescolavision;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class QuizActivity extends AppCompatActivity {
+public class EscolaVisionActivity extends AppCompatActivity {
     private Button mBoton1;
     private Button mBoton2;
     private Button mBoton3;
@@ -85,12 +85,10 @@ public class QuizActivity extends AppCompatActivity {
     int area3;
     int area4;
     int area5;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity);
-
+        setContentView(R.layout.activity_escola_vision);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
         mBoton1 = findViewById(R.id.boton1);
@@ -139,7 +137,7 @@ public class QuizActivity extends AppCompatActivity {
     private void checkAnswer(int answerValue) {
         int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
         int messageResId = 0;
-        switch (mCurrentIndex){
+        /*switch (mCurrentIndex){
             case 1,6,11,16,21,26 ->{
                 area1 += answerValue;
             }
@@ -157,6 +155,24 @@ public class QuizActivity extends AppCompatActivity {
             }
         }
 
+         */
+        switch (mCurrentIndex){
+            case 1:{
+                area1 += answerValue;
+            }
+            case 2:{
+                area2 += answerValue;
+            }
+            case 3:{
+                area3 += answerValue;
+            }
+            case 4:{
+                area4 += answerValue;
+            }
+            case 5:{
+                area5 += answerValue;
+            }
+        }
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
                 .show();
     }
