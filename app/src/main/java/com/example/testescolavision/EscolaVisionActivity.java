@@ -3,6 +3,7 @@ package com.example.testescolavision;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -85,9 +86,11 @@ public class EscolaVisionActivity extends AppCompatActivity {
     int area3;
     int area4;
     int area5;
+    private static final String TAG = "EscolaVisionActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
@@ -95,28 +98,28 @@ public class EscolaVisionActivity extends AppCompatActivity {
         mBoton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkAnswer(0);
+                addValueAnswer(0);
             }
         });
         mBoton2 = findViewById(R.id.boton2);
         mBoton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkAnswer(1);
+                addValueAnswer(1);
             }
         });
         mBoton3 = findViewById(R.id.boton3);
         mBoton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkAnswer(2);
+                addValueAnswer(2);
             }
         });
         mBoton4 = findViewById(R.id.boton4);
         mBoton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkAnswer(3);
+                addValueAnswer(3);
             }
         });
 
@@ -134,10 +137,11 @@ public class EscolaVisionActivity extends AppCompatActivity {
         mQuestionTextView.setText(question);
     }
 
-    private void checkAnswer(int answerValue) {
+    private void addValueAnswer(int answerValue) {
         int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
         int messageResId = 0;
-        /*switch (mCurrentIndex){
+        /*
+        switch (mCurrentIndex){
             case 1,6,11,16,21,26 ->{
                 area1 += answerValue;
             }
@@ -156,24 +160,66 @@ public class EscolaVisionActivity extends AppCompatActivity {
         }
 
          */
-        switch (mCurrentIndex){
-            case 1:{
-                area1 += answerValue;
-            }
-            case 2:{
-                area2 += answerValue;
-            }
-            case 3:{
-                area3 += answerValue;
-            }
-            case 4:{
-                area4 += answerValue;
-            }
-            case 5:{
-                area5 += answerValue;
-            }
+        switch (mCurrentIndex+1){
+            case 1: area1 += answerValue;
+            case 2: area2 += answerValue;
+            case 3: area3 += answerValue;
+            case 4: area4 += answerValue;
+            case 5: area5 += answerValue;
+            case 6: area1 += answerValue;
+            case 7: area2 += answerValue;
+            case 8: area3 += answerValue;
+            case 9: area4 += answerValue;
+            case 10: area5 += answerValue;
+            case 11: area1 += answerValue;
+            case 12: area2 += answerValue;
+            case 13: area3 += answerValue;
+            case 14: area4 += answerValue;
+            case 15: area5 += answerValue;
+            case 16: area1 += answerValue;
+            case 17: area2 += answerValue;
+            case 18: area3 += answerValue;
+            case 19: area4 += answerValue;
+            case 20: area5 += answerValue;
+            case 21: area1 += answerValue;
+            case 22: area2 += answerValue;
+            case 23: area3 += answerValue;
+            case 24: area4 += answerValue;
+            case 25: area5 += answerValue;
+            case 26: area1 += answerValue;
+            case 27: area2 += answerValue;
+            case 28: area3 += answerValue;
+            case 29: area4 += answerValue;
+            case 30: area5 += answerValue;
+
         }
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
                 .show();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart() called");
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume() called");
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause() called");
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop() called");
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy() called");
     }
 }
