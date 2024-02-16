@@ -1,6 +1,6 @@
 package com.example.testescolavision;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.*;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EscolaVisionActivity extends AppCompatActivity {
+public class EscolaVisionActivity extends AppCompatActivity implements EscolaVisionActivityInterface {
     private Button mBoton1;
     private Button mBoton2;
     private Button mBoton3;
@@ -88,9 +88,9 @@ public class EscolaVisionActivity extends AppCompatActivity {
     int area5;
     private static final String TAG = "EscolaVisionActivity";
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreat(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate(Bundle) called");
+        Log.d(TAG, "onCreat(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
