@@ -133,6 +133,7 @@ public class EscolaVisionActivity extends AppCompatActivity {
         });
     }
     private void updateQuestion(){
+        //Log.d(TAG, "Updating question text", new Exception());
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
     }
@@ -140,26 +141,6 @@ public class EscolaVisionActivity extends AppCompatActivity {
     private void addValueAnswer(int answerValue) {
         int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
         int messageResId = 0;
-        /*
-        switch (mCurrentIndex){
-            case 1,6,11,16,21,26 ->{
-                area1 += answerValue;
-            }
-            case 2,7,12,17,22,27 ->{
-                area2 += answerValue;
-            }
-            case 3,8,13,18,23,28 ->{
-                area3 += answerValue;
-            }
-            case 4,9,14,19,24,29 ->{
-                area4 += answerValue;
-            }
-            case 5,10,15,20,25,30 ->{
-                area5 += answerValue;
-            }
-        }
-
-         */
         switch (mCurrentIndex+1){
             case 1: area1 += answerValue;
             case 2: area2 += answerValue;
