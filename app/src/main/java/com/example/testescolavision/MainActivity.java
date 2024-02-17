@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EscolaVisionActivity extends AppCompatActivity implements EscolaVisionActivityInterface{
+public class MainActivity extends AppCompatActivity implements EscolaVisionActivityInterface{
     private Button mBoton1;
     private Button mBoton2;
     private Button mBoton3;
