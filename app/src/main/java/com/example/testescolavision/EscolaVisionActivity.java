@@ -87,11 +87,17 @@ public class EscolaVisionActivity extends AppCompatActivity implements EscolaVis
     int area4;
     int area5;
     private static final String TAG = "EscolaVisionActivity";
+    private static final String KEY_INDEX = "index";
     @Override
     public void onCreat(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
+
+        if (savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        }
+
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
         mBoton1 = findViewById(R.id.boton1);
@@ -192,6 +198,12 @@ public class EscolaVisionActivity extends AppCompatActivity implements EscolaVis
     public void onPause() {
         super.onPause();
         Log.d(TAG, "onPause() called");
+    }
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstanceState");
+        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
     @Override
     public void onStop() {
