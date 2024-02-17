@@ -4,6 +4,8 @@ import androidx.appcompat.app.*;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -193,6 +195,13 @@ public class MainActivity extends AppCompatActivity implements EscolaVisionActiv
     public void onResume() {
         super.onResume();
         Log.d(TAG, "onResume() called");
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu,
+                                    MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu);
+        inflater.inflate(R.menu.fragment_crime_list,
+                menu);
     }
     @Override
     public void onPause() {
