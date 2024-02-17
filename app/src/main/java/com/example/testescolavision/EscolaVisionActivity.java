@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class EscolaVisionActivity extends AppCompatActivity implements EscolaVisionActivityInterface {
+public class EscolaVisionActivity extends AppCompatActivity implements EscolaVisionActivityInterface{
     private Button mBoton1;
     private Button mBoton2;
     private Button mBoton3;
@@ -90,7 +90,7 @@ public class EscolaVisionActivity extends AppCompatActivity implements EscolaVis
     @Override
     public void onCreat(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreat(Bundle) called");
+        Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
