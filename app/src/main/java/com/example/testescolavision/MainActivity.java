@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements EscolaVisionActiv
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
-
+        setHasOptionsMenu(true);
         if (savedInstanceState != null) {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
         }
@@ -140,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements EscolaVisionActiv
             }
         });
     }
+
+    private void setHasOptionsMenu(boolean b) {
+    }
+
     private void updateQuestion(){
         //Log.d(TAG, "Updating question text", new Exception());
         int question = mQuestionBank[mCurrentIndex].getTextResId();
@@ -197,11 +201,9 @@ public class MainActivity extends AppCompatActivity implements EscolaVisionActiv
         Log.d(TAG, "onResume() called");
     }
     @Override
-    public void onCreateOptionsMenu(Menu menu,
-                                    MenuInflater inflater) {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu);
-        inflater.inflate(R.menu.fragment_crime_list,
-                menu);
+        inflater.inflate(R.menu.fragment_main_list, menu);
     }
     @Override
     public void onPause() {
