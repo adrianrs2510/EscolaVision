@@ -3,6 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -24,7 +25,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_red_light"
             android:minWidth="64dp"
             android:minHeight="54dip"
             android:text="@string/button1"
@@ -35,7 +36,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_orange_dark"
             android:minWidth="64dp"
             android:minHeight="54dip"
             android:text="@string/button2"
@@ -46,7 +47,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="103dp"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_orange_light"
             android:minWidth="64dp"
             android:minHeight="54dip"
             android:text="@string/button3"
@@ -57,7 +58,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:background="@android:color/holo_green_dark"
             android:minWidth="64dp"
             android:minHeight="54dip"
             android:text="@string/button4"
@@ -69,6 +70,7 @@
         android:id="@+id/botonNext"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/verdeAgua"
         android:text="@string/botonNext" />
 
 </LinearLayout>
