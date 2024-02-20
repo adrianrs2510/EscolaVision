@@ -2,9 +2,6 @@ package com.example.testescolavision;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.*;
-import androidx.fragment.app.Fragment;
-
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -153,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void addValueAnswer(int answerValue) {
         int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
+        int messageResId = 0;
         switch (mCurrentIndex+1){
             case 1: area1 += answerValue;
             case 2: area2 += answerValue;
@@ -186,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             case 30: area5 += answerValue;
 
         }
-        Toast.makeText(this, answerValue2, Toast.LENGTH_SHORT)
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
                 .show();
     }
 
