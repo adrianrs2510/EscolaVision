@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.*;
 import androidx.fragment.app.Fragment;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -98,9 +99,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_escola_vision);
         setHasOptionsMenu(true);
-        if (savedInstanceState != null) {
-            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
-        }
+
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
@@ -154,7 +153,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void addValueAnswer(int answerValue) {
         int answerValue2 = mQuestionBank[mCurrentIndex].getAnswerValue();
-        int messageResId = 0;
         switch (mCurrentIndex+1){
             case 1: area1 += answerValue;
             case 2: area2 += answerValue;
@@ -188,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
             case 30: area5 += answerValue;
 
         }
-        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
+        Toast.makeText(this, answerValue2, Toast.LENGTH_SHORT)
                 .show();
     }
 
@@ -216,8 +214,15 @@ public class MainActivity extends AppCompatActivity {
     public void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState");
-        savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+        savedInstanceState.putString(KEY_INDEX,mQuestionTextView.getText().toString());
     }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        mQuestionTextView.setText(savedInstanceState.getString(KEY_INDEX));
+    }
+
     @Override
     public void onStop() {
         super.onStop();
