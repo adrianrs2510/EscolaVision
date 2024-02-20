@@ -2,6 +2,8 @@ package com.example.testescolavision;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.*;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -90,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
     int area5;
     private static final String TAG = "MainActivity";
     private static final String KEY_INDEX = "index";
+    @SuppressLint("MissingInflatedId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
