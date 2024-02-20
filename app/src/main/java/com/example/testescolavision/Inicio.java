@@ -22,7 +22,7 @@ public class Inicio extends AppCompatActivity {
         });
     }
     public void irInicio(View v){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ScrollView.class);
         startActivity(intent);
     }
 }
