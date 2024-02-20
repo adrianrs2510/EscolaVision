@@ -1,7 +1,6 @@
 package com.example.testescolavision;
 
 import androidx.appcompat.app.*;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -88,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements EscolaVisionActiv
     int area3;
     int area4;
     int area5;
-    private static final String TAG = "EscolaVisionActivity";
+    private static final String TAG = "MainActivity";
     private static final String KEY_INDEX = "index";
     @Override
     public void onCreat(Bundle savedInstanceState) {
