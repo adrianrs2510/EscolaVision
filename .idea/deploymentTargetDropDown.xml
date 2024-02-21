@@ -4,36 +4,23 @@
     <value>
       <entry key="app">
         <State>
-          <runningDeviceTargetSelectedWithDropDown>
-            <Target>
-              <type value="RUNNING_DEVICE_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\adria\.android\avd\Pixel_7_API_30.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </runningDeviceTargetSelectedWithDropDown>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\adria\.android\avd\Pixel_7_API_30.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-02-20T16:27:59.126091600Z" />
+          <multipleDevicesSelectedInDropDown value="true" />
           <runningDeviceTargetsSelectedWithDialog>
             <Target>
               <type value="RUNNING_DEVICE_TARGET" />
               <deviceKey>
                 <Key>
                   <type value="SERIAL_NUMBER" />
-                  <value value="adb-f135da8b-2PrdYi._adb-tls-connect._tcp" />
+                  <value value="adb-R52R800001X-LezR4e._adb-tls-connect._tcp" />
+                </Key>
+              </deviceKey>
+            </Target>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="adb-d65b6c02-kGEHIK._adb-tls-connect._tcp" />
                 </Key>
               </deviceKey>
             </Target>
