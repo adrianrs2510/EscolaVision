@@ -10,4 +10,8 @@
     <color name="verdeAgua">#47ABB2</color>
     <color name="fondo">#B0BFC1</color>
     <color name="fondoInicio">#AED6F1</color>
+    <color name="rojo">@android:color/holo_red_light</color>
+    <color name="amarillo">@android:color/holo_orange_light</color>
+    <color name="naranja">@android:color/holo_orange_dark</color>
+    <color name="verde">@android:color/holo_green_dark</color>
 </resources>
