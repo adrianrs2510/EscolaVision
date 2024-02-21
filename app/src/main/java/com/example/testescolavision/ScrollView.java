@@ -1,9 +1,15 @@
 package com.example.testescolavision;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Xml;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -276,22 +282,56 @@ public class ScrollView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scrollview);
 
+        mboton1 = (Button) findViewById(R.id.button1);
+        mboton1.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                mboton1.setBackgroundResource(R.drawable.button_red_bg);
+                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
+                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
+            }
+        });
 
+
+        mboton2 = (Button) findViewById(R.id.button2);
+        mboton2.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
+                mboton2.setBackgroundResource(R.drawable.button_orange_bg);
+                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
+            }
+        });
         mboton3 = (Button) findViewById(R.id.button3);
         mboton3.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
                 area1 += 0;
                 Log.d(TAG, "+0");
-                mboton2.setEnabled(false);
+                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
+                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
+                mboton3.setBackgroundResource(R.drawable.button_yellow_bg);
+                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
             }
         });
 
-        mboton2 = (Button) findViewById(R.id.button2);
-        mboton2.setOnClickListener(new View.OnClickListener() {
+        mboton4 = (Button) findViewById(R.id.button4);
+        mboton4.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                mboton3.setEnabled(false);
+                area1 += 0;
+                Log.d(TAG, "+0");
+                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
+                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
+                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+                mboton4.setBackgroundResource(R.drawable.button_verde_bg);
+
             }
         });
 

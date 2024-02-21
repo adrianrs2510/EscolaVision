@@ -14,4 +14,8 @@
     <color name="amarillo">@android:color/holo_orange_light</color>
     <color name="naranja">@android:color/holo_orange_dark</color>
     <color name="verde">@android:color/holo_green_dark</color>
+    <color name="rojo_claro">#F39191</color>
+    <color name="amarillo_claro">#FFDA8F</color>
+    <color name="naranja_claro">#F8AD58</color>
+    <color name="verde_claro">#C2EC6F</color>
 </resources>
