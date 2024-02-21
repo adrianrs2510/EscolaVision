@@ -1,18 +1,16 @@
 package com.example.testescolavision;
 
-import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Xml;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class ScrollView extends AppCompatActivity {
     private Button mboton1;
@@ -256,7 +254,7 @@ public class ScrollView extends AppCompatActivity {
     private Button mboton239;
     private Button mboton240;
 
-    private Button[] mbotones = {
+    private Button[] buttons = {
             mboton1, mboton2, mboton3, mboton4, mboton5, mboton6, mboton7, mboton8, mboton9, mboton10,
             mboton11, mboton12, mboton13, mboton14, mboton15, mboton16, mboton17, mboton18, mboton19, mboton20,
             mboton21, mboton22, mboton23, mboton24, mboton25, mboton26, mboton27, mboton28, mboton29, mboton30,
@@ -298,13 +296,14 @@ public class ScrollView extends AppCompatActivity {
     };
 
     private static final String TAG = "ScrollView";
+
     /*
     @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.scrollview);
 
-    final Button[] buttons = new Button[240];
+    /*final Button[] buttons = new Button[240];
 
     for (int i = 1; i <= 240; i++) {
         int buttonId = getResources().getIdentifier("button" + i, "id", getPackageName());
@@ -333,20 +332,26 @@ private void setButtonClickListener(final Button button, final int index) {
 }
 
      */
-    @Override
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scrollview);
+        mboton1.findViewById(R.id.button1).setOnClickListener(onClickListener);
 
+        for (int i = 1; i <= 240; i++) {
+            int buttonId = getResources().getIdentifier("button" + i, "id", getPackageName());
+            mbotones[i - 1] = findViewById(buttonId);
+            setButtonClickListener(mbotones[i - 1], i - 1);
+        }
+
+     */
+/*
         mboton1 = (Button) findViewById(R.id.button1);
         mboton1.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                mboton1.setBackgroundResource(R.drawable.button_red_bg);
-                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
-                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
-                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
+                setMbotonRojo(mboton1,mboton2,mboton3,mboton4);
             }
         });
 
@@ -356,10 +361,7 @@ private void setButtonClickListener(final Button button, final int index) {
             @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
-                mboton2.setBackgroundResource(R.drawable.button_orange_bg);
-                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
-                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
+                setMbotonNaranja(mboton1,mboton2,mboton3,mboton4);
             }
         });
         mboton3 = (Button) findViewById(R.id.button3);
@@ -369,10 +371,7 @@ private void setButtonClickListener(final Button button, final int index) {
             public void onClick(View v) {
                 area1 += 0;
                 Log.d(TAG, "+0");
-                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
-                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
-                mboton3.setBackgroundResource(R.drawable.button_yellow_bg);
-                mboton4.setBackgroundResource(R.drawable.button_verde_light_bg);
+                setMbotonAmarillo(mboton1,mboton2,mboton3,mboton4);
             }
         });
 
@@ -383,15 +382,74 @@ private void setButtonClickListener(final Button button, final int index) {
             public void onClick(View v) {
                 area1 += 0;
                 Log.d(TAG, "+0");
-                mboton1.setBackgroundResource(R.drawable.button_red_light_bg);
-                mboton2.setBackgroundResource(R.drawable.button_orange_light_bg);
-                mboton3.setBackgroundResource(R.drawable.button_yellow_light_bg);
-                mboton4.setBackgroundResource(R.drawable.button_verde_bg);
+                setMbotonVerde(mboton1,mboton2,mboton3,mboton4);
 
             }
         });
 
-        /*private void addValueAnswer(int answerValue) {
+        mboton5 = (Button) findViewById(R.id.button5);
+        mboton5.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                setMbotonRojo(mboton5,mboton6,mboton7,mboton8);
+            }
+        });
+
+        mboton6 = (Button) findViewById(R.id.button6);
+        mboton6.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                setMbotonNaranja(mboton5,mboton6,mboton7,mboton8);
+            }
+        });
+
+        mboton7 = (Button) findViewById(R.id.button7);
+        mboton7.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                setMbotonAmarillo(mboton5,mboton6,mboton7,mboton8);
+            }
+        });
+
+        mboton8 = (Button) findViewById(R.id.button8);
+        mboton8.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                setMbotonVerde(mboton5,mboton6,mboton7,mboton8);
+            }
+        });
+
+    }
+    private void setMbotonRojo(Button m1, Button m2, Button m3, Button m4){
+        m1.setBackgroundResource(R.drawable.button_red_bg);
+        m2.setBackgroundResource(R.drawable.button_orange_light_bg);
+        m3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+        m4.setBackgroundResource(R.drawable.button_verde_light_bg);
+    }
+    private void setMbotonNaranja(Button m1, Button m2, Button m3, Button m4){
+        m1.setBackgroundResource(R.drawable.button_red_light_bg);
+        m2.setBackgroundResource(R.drawable.button_orange_bg);
+        m3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+        m4.setBackgroundResource(R.drawable.button_verde_light_bg);
+    }
+    private void setMbotonAmarillo(Button m1, Button m2, Button m3, Button m4){
+        m1.setBackgroundResource(R.drawable.button_red_light_bg);
+        m2.setBackgroundResource(R.drawable.button_orange_light_bg);
+        m3.setBackgroundResource(R.drawable.button_yellow_bg);
+        m4.setBackgroundResource(R.drawable.button_verde_light_bg);
+    }
+    private void setMbotonVerde(Button m1, Button m2, Button m3, Button m4){
+        m1.setBackgroundResource(R.drawable.button_red_light_bg);
+        m2.setBackgroundResource(R.drawable.button_orange_light_bg);
+        m3.setBackgroundResource(R.drawable.button_yellow_light_bg);
+        m4.setBackgroundResource(R.drawable.button_verde_bg);
+    }
+
+    /*private void addValueAnswer(int answerValue) {
             for (int botonId : botonesId){
                 switch (botonId){
                     case 1: area1 += answerValue;
@@ -427,6 +485,134 @@ private void setButtonClickListener(final Button button, final int index) {
                 }
             }
         }
-         */
+
+ */
+
+    /*private void setButtonClickListener(final Button button, final int index) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                for (int i = 0; i < mbotones.length; i++) {
+                    int drawableId = (i == index) ? R.drawable.button_verde_bg : R.drawable.button_verde_light_bg;
+                    mbotones[i].setBackgroundResource(drawableId);
+                }
+
+                // Resto del código dentro del onClick si es necesario
+                if (index == 2) {
+                    area1 += 0;
+                    Log.d(TAG, "+0");
+                }
+            }
+        });
+    }
+
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            pressed(view);
+        }
+    };
+
+    private void pressed(View view){
+        switch(view.getId()){
+            case R.id.button1:
+                //Lo que sea para sumar...
+                break;
+            case R.id.boton_restar:
+                //Lo que sea para restar...
+                break;
+            case R.id.etc:
+                break;
+        }
+    }
+
+     */
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.scrollview);
+        Log.d(TAG, "onCreate(Bundle) called");
+
+        // Obtener referencias a los botones
+
+        for (int i = 0; i < buttons.length; i++) {
+            @SuppressLint("DiscouragedApi") int buttonId = getResources().getIdentifier("button" + (i + 1), "id", getPackageName());
+            buttons[i] = findViewById(buttonId);
+        }
+
+        // Configurar los listeners de clic para los botones
+        setupButtonClickListener(buttons[0], buttons[1], buttons[2], buttons[3]);
+        setupButtonClickListener(buttons[4], buttons[5], buttons[6], buttons[7]);
+        setupButtonClickListener(buttons[8], buttons[9], buttons[10], buttons[11]);
+        setupButtonClickListener(buttons[12], buttons[13], buttons[14], buttons[15]);
+    }
+
+    private void setupButtonClickListener(Button redButton, Button orangeButton, Button yellowButton, Button greenButton) {
+        redButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setButtonBackground(redButton, R.drawable.button_red_bg);
+                setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
+                setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
+                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+            }
+        });
+
+        orangeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setButtonBackground(redButton, R.drawable.button_red_light_bg);
+                setButtonBackground(orangeButton, R.drawable.button_orange_bg);
+                setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
+                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+            }
+        });
+
+        yellowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setButtonBackground(redButton, R.drawable.button_red_light_bg);
+                setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
+                setButtonBackground(yellowButton, R.drawable.button_yellow_bg);
+                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+            }
+        });
+
+        greenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setButtonBackground(redButton, R.drawable.button_red_light_bg);
+                setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
+                setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
+                setButtonBackground(greenButton, R.drawable.button_verde_bg);
+            }
+        });
+    }
+
+    private void setButtonBackground(Button button, int drawableId) {
+        button.setBackgroundResource(drawableId);
+    }
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.toolbar_menu, menu);
+        return true;
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        if (item.getItemId() == R.id.item1){
+            resetearActivity();
+        }else{
+            Intent intent = new Intent(ScrollView.this, Inicio.class);
+            startActivity(intent);
+        }
+        return true;
+    }
+    public void resetearActivity()
+    {
+        Intent intent = new Intent(ScrollView.this, ScrollView.class);
+        startActivity(intent);
     }
 }

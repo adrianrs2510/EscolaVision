@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu);
-        inflater.inflate(R.menu.fragment_main_list, menu);
+        inflater.inflate(R.menu.toolbar_menu, menu);
     }
     @Override
     public void onPause() {
