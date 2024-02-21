@@ -298,6 +298,41 @@ public class ScrollView extends AppCompatActivity {
     };
 
     private static final String TAG = "ScrollView";
+    /*
+    @Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.scrollview);
+
+    final Button[] buttons = new Button[240];
+
+    for (int i = 1; i <= 240; i++) {
+        int buttonId = getResources().getIdentifier("button" + i, "id", getPackageName());
+        buttons[i - 1] = findViewById(buttonId);
+        setButtonClickListener(buttons[i - 1], i - 1);
+    }
+}
+
+private void setButtonClickListener(final Button button, final int index) {
+    button.setOnClickListener(new View.OnClickListener() {
+        @SuppressLint("ResourceAsColor")
+        @Override
+        public void onClick(View v) {
+            for (int i = 0; i < buttons.length; i++) {
+                int drawableId = (i == index) ? R.drawable.button_verde_bg : R.drawable.button_verde_light_bg;
+                buttons[i].setBackgroundResource(drawableId);
+            }
+
+            // Resto del código dentro del onClick si es necesario
+            if (index == 2) {
+                area1 += 0;
+                Log.d(TAG, "+0");
+            }
+        }
+    });
+}
+
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
