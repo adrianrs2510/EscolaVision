@@ -256,10 +256,31 @@ public class ScrollView extends AppCompatActivity {
     private Button mboton239;
     private Button mboton240;
 
-    private Button[] botones = {
-
-
-
+    private Button[] mbotones = {
+            mboton1, mboton2, mboton3, mboton4, mboton5, mboton6, mboton7, mboton8, mboton9, mboton10,
+            mboton11, mboton12, mboton13, mboton14, mboton15, mboton16, mboton17, mboton18, mboton19, mboton20,
+            mboton21, mboton22, mboton23, mboton24, mboton25, mboton26, mboton27, mboton28, mboton29, mboton30,
+            mboton31, mboton32, mboton33, mboton34, mboton35, mboton36, mboton37, mboton38, mboton39, mboton40,
+            mboton41, mboton42, mboton43, mboton44, mboton45, mboton46, mboton47, mboton48, mboton49, mboton50,
+            mboton51, mboton52, mboton53, mboton54, mboton55, mboton56, mboton57, mboton58, mboton59, mboton60,
+            mboton61, mboton62, mboton63, mboton64, mboton65, mboton66, mboton67, mboton68, mboton69, mboton70,
+            mboton71, mboton72, mboton73, mboton74, mboton75, mboton76, mboton77, mboton78, mboton79, mboton80,
+            mboton81, mboton82, mboton83, mboton84, mboton85, mboton86, mboton87, mboton88, mboton89, mboton90,
+            mboton91, mboton92, mboton93, mboton94, mboton95, mboton96, mboton97, mboton98, mboton99, mboton100,
+            mboton101, mboton102, mboton103, mboton104, mboton105, mboton106, mboton107, mboton108, mboton109, mboton110,
+            mboton111, mboton112, mboton113, mboton114, mboton115, mboton116, mboton117, mboton118, mboton119, mboton120,
+            mboton121, mboton122, mboton123, mboton124, mboton125, mboton126, mboton127, mboton128, mboton129, mboton130,
+            mboton131, mboton132, mboton133, mboton134, mboton135, mboton136, mboton137, mboton138, mboton139, mboton140,
+            mboton141, mboton142, mboton143, mboton144, mboton145, mboton146, mboton147, mboton148, mboton149, mboton150,
+            mboton151, mboton152, mboton153, mboton154, mboton155, mboton156, mboton157, mboton158, mboton159, mboton160,
+            mboton161, mboton162, mboton163, mboton164, mboton165, mboton166, mboton167, mboton168, mboton169, mboton170,
+            mboton171, mboton172, mboton173, mboton174, mboton175, mboton176, mboton177, mboton178, mboton179, mboton180,
+            mboton181, mboton182, mboton183, mboton184, mboton185, mboton186, mboton187, mboton188, mboton189, mboton190,
+            mboton191, mboton192, mboton193, mboton194, mboton195, mboton196, mboton197, mboton198, mboton199, mboton200,
+            mboton201, mboton202, mboton203, mboton204, mboton205, mboton206, mboton207, mboton208, mboton209, mboton210,
+            mboton211, mboton212, mboton213, mboton214, mboton215, mboton216, mboton217, mboton218, mboton219, mboton220,
+            mboton221, mboton222, mboton223, mboton224, mboton225, mboton226, mboton227, mboton228, mboton229, mboton230,
+            mboton231, mboton232, mboton233, mboton234, mboton235, mboton236, mboton237, mboton238, mboton239, mboton240,
     };
     int area1;
     int area2;
