@@ -550,10 +550,9 @@ private void setButtonClickListener(final Button button, final int index) {
         }
 
         // Configurar los listeners de clic para los botones
-        setupButtonClickListener(buttons[0], buttons[1], buttons[2], buttons[3]);
-        setupButtonClickListener(buttons[4], buttons[5], buttons[6], buttons[7]);
-        setupButtonClickListener(buttons[8], buttons[9], buttons[10], buttons[11]);
-        setupButtonClickListener(buttons[12], buttons[13], buttons[14], buttons[15]);
+        for (int i = 0; i< 35; i+=4){
+            setupButtonClickListener(buttons[i], buttons[i+1], buttons[i+2], buttons[i+3]);
+        }
     }
 
     private void setupButtonClickListener(Button redButton, Button orangeButton, Button yellowButton, Button greenButton) {
@@ -605,7 +604,6 @@ private void setButtonClickListener(final Button button, final int index) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.fragment_main_list, menu);
         return true;
-
     }
 
     public boolean onOptionsItemSelected(MenuItem item)
