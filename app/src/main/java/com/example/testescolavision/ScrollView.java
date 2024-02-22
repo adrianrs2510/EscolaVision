@@ -395,6 +395,7 @@ public class ScrollView extends AppCompatActivity {
         startActivity(intent);
     }
     public void sumar(View v){
+        //modulo4
         int id=v.getId();
         int coc = id/4;
         int rest= id%4;
@@ -430,6 +431,6 @@ public class ScrollView extends AppCompatActivity {
             case 28: area4 += rest;
             case 29: area5 += rest;
         }
-        Log.d(TAG, "sumar hecho");
+        Log.d(TAG, "sumado"+rest+"al area de la pregunta"+coc);
     }
 }
