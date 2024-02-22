@@ -665,5 +665,6 @@ private void setButtonClickListener(final Button button, final int index) {
             case 28: area4 += rest;
             case 29: area5 += rest;
         }
+        Log.d(TAG, "sumar hecho");
     }
 }
