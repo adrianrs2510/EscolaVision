@@ -293,8 +293,10 @@ public class ScrollView extends AppCompatActivity {
     int area3;
     int area4;
     int area5;
+    private static final String TAG = "ScrollView";
+    /*
     public static int[] botonesId = {
-            R.id.button1,
+     R.id.button1,
             R.id.button2,
             R.id.button3,
             R.id.button4,
@@ -302,8 +304,10 @@ public class ScrollView extends AppCompatActivity {
             R.id.button7,
             R.id.button8
     };
+     */
 
-    private static final String TAG = "ScrollView";
+
+
 
     /*
     @Override
@@ -493,7 +497,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 }
             }
         }
-
+        modulo 4
  */
 
     /*private void setButtonClickListener(final Button button, final int index) {
@@ -563,7 +567,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
-
+                sumar(v);
             }
         });
 
@@ -574,6 +578,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 setButtonBackground(orangeButton, R.drawable.button_orange_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+                sumar(v);
             }
         });
 
@@ -584,6 +589,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+                sumar(v);
             }
         });
 
@@ -594,6 +600,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_bg);
+                sumar(v);
             }
         });
     }
@@ -622,8 +629,41 @@ private void setButtonClickListener(final Button button, final int index) {
         Intent intent = new Intent(ScrollView.this, ScrollView.class);
         startActivity(intent);
     }
-
-    private void añadirPuntosAreas(){
-
+    public void sumar(View v){
+        int id=v.getId();
+        int coc = id/4;
+        int rest= id%4;
+        switch (coc){
+            case 0: area1 += rest;
+            case 1: area2 += rest;
+            case 2: area3 += rest;
+            case 3: area4 += rest;
+            case 4: area5 += rest;
+            case 5: area1 += rest;
+            case 6: area2 += rest;
+            case 7: area3 += rest;
+            case 8: area4 += rest;
+            case 9: area5 += rest;
+            case 10: area1 += rest;
+            case 11: area2 += rest;
+            case 12: area3 += rest;
+            case 13: area4 += rest;
+            case 14: area5 += rest;
+            case 15: area1 += rest;
+            case 16: area2 += rest;
+            case 17: area3 += rest;
+            case 18: area4 += rest;
+            case 19: area5 += rest;
+            case 20: area1 += rest;
+            case 21: area2 += rest;
+            case 22: area3 += rest;
+            case 23: area4 += rest;
+            case 24: area5 += rest;
+            case 25: area1 += rest;
+            case 26: area2 += rest;
+            case 27: area3 += rest;
+            case 28: area4 += rest;
+            case 29: area5 += rest;
+        }
     }
 }
