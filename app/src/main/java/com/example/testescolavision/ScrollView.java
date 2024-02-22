@@ -550,7 +550,7 @@ private void setButtonClickListener(final Button button, final int index) {
         }
 
         // Configurar los listeners de clic para los botones
-        for (int i = 0; i< 35; i+=4){
+        for (int i = 0; i< 84; i+=4){
             setupButtonClickListener(buttons[i], buttons[i+1], buttons[i+2], buttons[i+3]);
         }
     }
@@ -563,6 +563,7 @@ private void setButtonClickListener(final Button button, final int index) {
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+
             }
         });
 
@@ -620,5 +621,9 @@ private void setButtonClickListener(final Button button, final int index) {
     {
         Intent intent = new Intent(ScrollView.this, ScrollView.class);
         startActivity(intent);
+    }
+
+    private void añadirPuntosAreas(){
+
     }
 }
