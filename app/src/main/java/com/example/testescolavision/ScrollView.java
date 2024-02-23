@@ -418,7 +418,6 @@ public class ScrollView extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         CustomAdapter adapter = new CustomAdapter(sortedVariables);
         recyclerView.setAdapter(adapter);
-
          */
     }
     public void irResultados(View v){
