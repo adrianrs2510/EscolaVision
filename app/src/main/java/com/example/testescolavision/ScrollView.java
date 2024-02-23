@@ -404,11 +404,11 @@ public class ScrollView extends AppCompatActivity {
         });
         // Obtén las 5 variables y ordénalas de mayor a menor
         List<Integer> unsortedVariables = new ArrayList<>();
-        unsortedVariables.add(10);
-        unsortedVariables.add(5);
-        unsortedVariables.add(8);
-        unsortedVariables.add(3);
-        unsortedVariables.add(12);
+        unsortedVariables.add(area1);
+        unsortedVariables.add(area2);
+        unsortedVariables.add(area3);
+        unsortedVariables.add(area4);
+        unsortedVariables.add(area5);
 
         List<Integer> sortedVariables = new ArrayList<>(unsortedVariables);
         Collections.sort(sortedVariables, Collections.reverseOrder());
