@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,6 +21,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class ScrollView extends AppCompatActivity {
     private Button mboton1;
@@ -396,6 +402,22 @@ public class ScrollView extends AppCompatActivity {
                 irResultados(v);
             }
         });
+        // Obtén las 5 variables y ordénalas de mayor a menor
+        List<Integer> unsortedVariables = new ArrayList<>();
+        unsortedVariables.add(10);
+        unsortedVariables.add(5);
+        unsortedVariables.add(8);
+        unsortedVariables.add(3);
+        unsortedVariables.add(12);
+
+        List<Integer> sortedVariables = new ArrayList<>(unsortedVariables);
+        Collections.sort(sortedVariables, Collections.reverseOrder());
+
+        // Configura el RecyclerView
+        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"}) RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        CustomAdapter adapter = new CustomAdapter(sortedVariables);
+        recyclerView.setAdapter(adapter);
     }
     public void irResultados(View v){
         Intent intent = new Intent(this, Resultados.class);
@@ -476,6 +498,7 @@ public class ScrollView extends AppCompatActivity {
         Intent intent = new Intent(ScrollView.this, ScrollView.class);
         startActivity(intent);
     }
+
     public void sumar(View v){
         //modulo4
         int id=v.getId();
