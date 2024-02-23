@@ -20,7 +20,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         public ViewHolder(View itemView) {
             super(itemView);
-            variableTextView = itemView.findViewById(R.id.textView61);
+            variableTextView = itemView.findViewById(R.id.textView63);
         }
     }
 
