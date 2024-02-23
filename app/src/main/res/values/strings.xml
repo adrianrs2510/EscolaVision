@@ -69,13 +69,10 @@
     <string name="button3">Bastante de acuerdo/Me interesa bastante</string>
     <string name="button4">Absolutamente de acuerdo/Me gusta mucho</string>
     <string name="botonNext">Siguiente</string>
-    <string name="correct_toast">Correct!</string>
-    <string name="incorrect_toast">Incorrect!</string>
+
     <string name="new_test">New Test</string>
-    <string name="show_subtitle">Show Subtitle</string>
-    <string name="hide_subtitle">Hide Subtitle</string>
-    <string name="subtitle_format">%1$d crimes</string>
-    
+
+
     <string name="area1">Área 1:</string>
     <string name="area2">Área 2:</string>
     <string name="area3">Área 3:</string>

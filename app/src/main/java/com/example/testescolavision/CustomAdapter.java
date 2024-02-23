@@ -20,13 +20,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         public ViewHolder(View itemView) {
             super(itemView);
-            variableTextView = itemView.findViewById(R.id.variableTextView);
+            variableTextView = itemView.findViewById(R.id.textView61);
         }
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.resultados, parent, false);
         return new ViewHolder(view);
     }
 
