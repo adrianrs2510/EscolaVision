@@ -75,4 +75,10 @@
     <string name="show_subtitle">Show Subtitle</string>
     <string name="hide_subtitle">Hide Subtitle</string>
     <string name="subtitle_format">%1$d crimes</string>
+    
+    <string name="area1">Área 1:</string>
+    <string name="area2">Área 2:</string>
+    <string name="area3">Área 3:</string>
+    <string name="area4">Área 4:</string>
+    <string name="area5">Área 5:</string>
 </resources>

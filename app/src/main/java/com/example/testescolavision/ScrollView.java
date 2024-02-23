@@ -261,6 +261,7 @@ public class ScrollView extends AppCompatActivity {
     private Button mboton238;
     private Button mboton239;
     private Button mboton240;
+    private Button enviarTest;
 
     private Button[] buttons = {
             mboton1, mboton2, mboton3, mboton4, mboton5, mboton6, mboton7, mboton8, mboton9, mboton10,
@@ -387,6 +388,18 @@ public class ScrollView extends AppCompatActivity {
         for (int i = 0; i< 240; i+=4){
             setupButtonClickListener(buttons[i], buttons[i+1], buttons[i+2], buttons[i+3]);
         }
+
+        enviarTest = (Button) findViewById(R.id.botonTerminarTest);
+        enviarTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irResultados(v);
+            }
+        });
+    }
+    public void irResultados(View v){
+        Intent intent = new Intent(this, Resultados.class);
+        startActivity(intent);
     }
 
     private void setupButtonClickListener(Button redButton, Button orangeButton, Button yellowButton, Button greenButton) {

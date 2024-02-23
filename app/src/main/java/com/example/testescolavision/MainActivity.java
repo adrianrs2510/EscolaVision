@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
-        setContentView(R.layout.activity_escola_vision);
+        /*setContentView(R.layout.activity_escola_vision);
         setHasOptionsMenu(true);
 
 
@@ -234,4 +234,6 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(TAG, "onDestroy() called");
     }
-}
+
+         */
+}}
