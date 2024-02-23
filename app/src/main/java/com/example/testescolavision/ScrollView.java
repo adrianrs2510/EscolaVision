@@ -288,6 +288,71 @@ public class ScrollView extends AppCompatActivity {
             mboton221, mboton222, mboton223, mboton224, mboton225, mboton226, mboton227, mboton228, mboton229, mboton230,
             mboton231, mboton232, mboton233, mboton234, mboton235, mboton236, mboton237, mboton238, mboton239, mboton240,
     };
+
+    private Question[] mQuestionBank = new Question[] {
+            new Question(R.string.question_text_1, 0),
+            new Question(R.string.question_text_2, 0),
+            new Question(R.string.question_text_3, 0),
+            new Question(R.string.question_text_4, 0),
+            new Question(R.string.question_text_5, 0),
+            new Question(R.string.question_text_6, 0),
+            new Question(R.string.question_text_7, 0),
+            new Question(R.string.question_text_8, 0),
+            new Question(R.string.question_text_9, 0),
+            new Question(R.string.question_text_10, 0),
+            new Question(R.string.question_text_11, 0),
+            new Question(R.string.question_text_12, 0),
+            new Question(R.string.question_text_13, 0),
+            new Question(R.string.question_text_14, 0),
+            new Question(R.string.question_text_15, 0),
+            new Question(R.string.question_text_16, 0),
+            new Question(R.string.question_text_17, 0),
+            new Question(R.string.question_text_18, 0),
+            new Question(R.string.question_text_19, 0),
+            new Question(R.string.question_text_20, 0),
+            new Question(R.string.question_text_21, 0),
+            new Question(R.string.question_text_22, 0),
+            new Question(R.string.question_text_23, 0),
+            new Question(R.string.question_text_24, 0),
+            new Question(R.string.question_text_25, 0),
+            new Question(R.string.question_text_26, 0),
+            new Question(R.string.question_text_27, 0),
+            new Question(R.string.question_text_28, 0),
+            new Question(R.string.question_text_29, 0),
+            new Question(R.string.question_text_30, 0),
+            new Question(R.string.question_text_31, 0),
+            new Question(R.string.question_text_32, 0),
+            new Question(R.string.question_text_33, 0),
+            new Question(R.string.question_text_34, 0),
+            new Question(R.string.question_text_35, 0),
+            new Question(R.string.question_text_36, 0),
+            new Question(R.string.question_text_37, 0),
+            new Question(R.string.question_text_38, 0),
+            new Question(R.string.question_text_39, 0),
+            new Question(R.string.question_text_40, 0),
+            new Question(R.string.question_text_41, 0),
+            new Question(R.string.question_text_42, 0),
+            new Question(R.string.question_text_43, 0),
+            new Question(R.string.question_text_44, 0),
+            new Question(R.string.question_text_45, 0),
+            new Question(R.string.question_text_46, 0),
+            new Question(R.string.question_text_47, 0),
+            new Question(R.string.question_text_48, 0),
+            new Question(R.string.question_text_49, 0),
+            new Question(R.string.question_text_50, 0),
+            new Question(R.string.question_text_51, 0),
+            new Question(R.string.question_text_52, 0),
+            new Question(R.string.question_text_53, 0),
+            new Question(R.string.question_text_54, 0),
+            new Question(R.string.question_text_55, 0),
+            new Question(R.string.question_text_56, 0),
+            new Question(R.string.question_text_57, 0),
+            new Question(R.string.question_text_58, 0),
+            new Question(R.string.question_text_59, 0),
+            new Question(R.string.question_text_60, 0)
+
+    };
+    int value;
     int area1;
     int area2;
     int area3;
@@ -333,6 +398,7 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
                 sumar(v);
+                value = 0;
             }
         });
 
@@ -344,6 +410,7 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
                 sumar(v);
+                value = 1;
             }
         });
 
@@ -355,6 +422,7 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(yellowButton, R.drawable.button_yellow_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
                 sumar(v);
+                value = 2;
             }
         });
 
@@ -366,6 +434,7 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
                 setButtonBackground(greenButton, R.drawable.button_verde_bg);
                 sumar(v);
+                value = 3;
             }
         });
     }
