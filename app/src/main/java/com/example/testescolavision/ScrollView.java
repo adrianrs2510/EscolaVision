@@ -403,7 +403,7 @@ public class ScrollView extends AppCompatActivity {
             }
         });
         // Obtén las 5 variables y ordénalas de mayor a menor
-        List<Integer> unsortedVariables = new ArrayList<>();
+        /*List<Integer> unsortedVariables = new ArrayList<>();
         unsortedVariables.add(10);
         unsortedVariables.add(5);
         unsortedVariables.add(8);
@@ -418,6 +418,8 @@ public class ScrollView extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         CustomAdapter adapter = new CustomAdapter(sortedVariables);
         recyclerView.setAdapter(adapter);
+
+         */
     }
     public void irResultados(View v){
         Intent intent = new Intent(this, Resultados.class);
