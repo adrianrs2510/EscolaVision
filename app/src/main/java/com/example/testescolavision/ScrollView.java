@@ -506,7 +506,8 @@ public class ScrollView extends AppCompatActivity {
         if (item.getItemId() == R.id.item1){
             resetearActivity();
         }else{
-            finish();
+            Intent intent = new Intent(ScrollView.this, Inicio.class);
+            startActivity(intent);
         }
         return true;
     }
@@ -516,21 +517,86 @@ public class ScrollView extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void sumar(View v){
+    public void sumar(View v) {
         //modulo4
-        int id=v.getId();
-        int coc = Math.floorDiv(id,4);
-        Log.d(TAG,"valor ID "+id);
-        if(coc>=0 && coc<=63){
+        int id = v.getId();
+        int coc = Math.floorDiv(id, 4);
+        Log.d(TAG, "valor ID " + id);
+        if (coc >= 0 && coc <= 63) {
             mQuestionBank[coc].setAnswerValue(value);
-            Log.d(TAG,"valor añadido");
+            Log.d(TAG, "valor añadido");
+            String id2 = v.getTag().toString();
+            int idint = Integer.parseInt(id2);
+            int coc2 = idint / 4;
+            int rest = idint % 4;
+            switch (coc2) {
+                case 0:
+                    area1 += rest;
+                case 1:
+                    area2 += rest;
+                case 2:
+                    area3 += rest;
+                case 3:
+                    area4 += rest;
+                case 4:
+                    area5 += rest;
+                case 5:
+                    area1 += rest;
+                case 6:
+                    area2 += rest;
+                case 7:
+                    area3 += rest;
+                case 8:
+                    area4 += rest;
+                case 9:
+                    area5 += rest;
+                case 10:
+                    area1 += rest;
+                case 11:
+                    area2 += rest;
+                case 12:
+                    area3 += rest;
+                case 13:
+                    area4 += rest;
+                case 14:
+                    area5 += rest;
+                case 15:
+                    area1 += rest;
+                case 16:
+                    area2 += rest;
+                case 17:
+                    area3 += rest;
+                case 18:
+                    area4 += rest;
+                case 19:
+                    area5 += rest;
+                case 20:
+                    area1 += rest;
+                case 21:
+                    area2 += rest;
+                case 22:
+                    area3 += rest;
+                case 23:
+                    area4 += rest;
+                case 24:
+                    area5 += rest;
+                case 25:
+                    area1 += rest;
+                case 26:
+                    area2 += rest;
+                case 27:
+                    area3 += rest;
+                case 28:
+                    area4 += rest;
+                case 29:
+                    area5 += rest;
+            }
+
+
+            Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc);
         }
-
-
-
-        Log.d(TAG, "sumado"+value+"al area de la pregunta "+coc);
     }
-    public void recogerYSumar(View v){
+    public void recogerYSumar (View v) {
         for (int i = 0; i<63;i++){
             if (mQuestionBank[i].getTextResId() == 0 || mQuestionBank[i].getTextResId() ==5
                     || mQuestionBank[i].getTextResId() == 10 || mQuestionBank[i].getTextResId() == 15
