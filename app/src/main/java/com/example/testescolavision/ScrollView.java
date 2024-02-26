@@ -421,7 +421,17 @@ public class ScrollView extends AppCompatActivity {
          */
     }
     public void irResultados(View v){
+        //enviar datos
+        Bundle enviaDatos=new Bundle();
+        enviaDatos.putInt("area1", area1);
+        enviaDatos.putInt("area2", area2);
+        enviaDatos.putInt("area3", area3);
+        enviaDatos.putInt("area4", area4);
+        enviaDatos.putInt("area5", area5);
+
+        //iniciar actividad
         Intent intent = new Intent(this, Resultados.class);
+        intent.putExtras(enviaDatos);
         startActivity(intent);
     }
 

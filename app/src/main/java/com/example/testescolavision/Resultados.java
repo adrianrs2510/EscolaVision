@@ -57,5 +57,17 @@ public class Resultados extends AppCompatActivity {
     }
 
  */
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.resultados);
+    Bundle recibeDatos = getIntent().getExtras();
+    int area1 = recibeDatos.getInt("area1");
+    int area2 = recibeDatos.getInt("area2");
+    int area3 = recibeDatos.getInt("area3");
+    int area4 = recibeDatos.getInt("area4");
+    int area5 = recibeDatos.getInt("area5");
+
+}
 
 }
