@@ -2,11 +2,14 @@ package com.example.testescolavision;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -57,6 +60,8 @@ public class Resultados extends AppCompatActivity {
     }
 
  */
+    TextView result;
+@SuppressLint("MissingInflatedId")
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -67,7 +72,9 @@ protected void onCreate(Bundle savedInstanceState) {
     int area3 = recibeDatos.getInt("area3");
     int area4 = recibeDatos.getInt("area4");
     int area5 = recibeDatos.getInt("area5");
+    result = findViewById(R.id.resultadosint);
 
+    result.setText(area1);
 }
 
 }
