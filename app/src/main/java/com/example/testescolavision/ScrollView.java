@@ -433,12 +433,23 @@ public class ScrollView extends AppCompatActivity {
 
 
         //iniciar actividad
+        /*
+        Bundle enviarDatos =new Bundle();
+        enviarDatos.putInt("area1", area1);
+        enviarDatos.putInt("area2", area2);
+        enviarDatos.putInt("area3", area3);
+        enviarDatos.putInt("area4", area4);
+        enviarDatos.putInt("area5", area5);
+
+         */
+
         intent = new Intent(this, Resultados.class);
         intent.putExtra("area1", String.valueOf(area1));
         intent.putExtra("area2", String.valueOf(area2));
         intent.putExtra("area3", String.valueOf(area3));
         intent.putExtra("area4", String.valueOf(area4));
         intent.putExtra("area5", String.valueOf(area5));
+
         startActivity(intent);
     }
 
@@ -519,12 +530,6 @@ public class ScrollView extends AppCompatActivity {
 
     public void sumar(View v) {
         //modulo4
-        int id = v.getId();
-        int coc = Math.floorDiv(id, 4);
-        Log.d(TAG, "valor ID " + id);
-        if (coc >= 0 && coc <= 63) {
-            mQuestionBank[coc].setAnswerValue(value);
-            Log.d(TAG, "valor añadido");
             String id2 = v.getTag().toString();
             int idint = Integer.parseInt(id2);
             int coc2 = idint / 4;
@@ -593,9 +598,8 @@ public class ScrollView extends AppCompatActivity {
             }
 
 
-            Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc);
+            Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc2);
         }
-    }
     public void recogerYSumar (View v) {
         for (int i = 0; i<63;i++){
             if (mQuestionBank[i].getTextResId() == 0 || mQuestionBank[i].getTextResId() ==5

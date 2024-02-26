@@ -62,23 +62,24 @@ public class Resultados extends AppCompatActivity {
 
  */
     TextView result;
-@SuppressLint("MissingInflatedId")
+    Bundle bundle;
+@SuppressLint({"MissingInflatedId", "SetTextI18n"})
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.resultados);
-    Bundle recibeDatos = getIntent().getExtras();
-    int area1 = recibeDatos.getInt("area1");
-    int area2 = recibeDatos.getInt("area2");
-    int area3 = recibeDatos.getInt("area3");
-    int area4 = recibeDatos.getInt("area4");
-    int area5 = recibeDatos.getInt("area5");
-    /*
+    bundle  = getIntent().getExtras();
+    assert bundle != null;
+    String area1 = bundle.getString("area1");
+    String area2 = bundle.getString("area2");
+    String area3 = bundle.getString("area3");
+    String area4 = bundle.getString("area4");
+    String area5 = bundle.getString("area5");
+
     result = findViewById(R.id.resultadosint);
 
-    result.setText(area1);
 
-     */
+    result.setText(area1);
 }
 
 }
