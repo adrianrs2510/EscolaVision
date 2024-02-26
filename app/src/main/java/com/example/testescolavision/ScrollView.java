@@ -267,6 +267,18 @@ public class ScrollView extends AppCompatActivity {
     private Button mboton238;
     private Button mboton239;
     private Button mboton240;
+    private Button mboton241;
+    private Button mboton242;
+    private Button mboton243;
+    private Button mboton244;
+    private Button mboton245;
+    private Button mboton246;
+    private Button mboton247;
+    private Button mboton248;
+    private Button mboton249;
+    private Button mboton250;
+    private Button mboton251;
+    private Button mboton252;
     private Button enviarTest;
 
     private Button[] buttons = {
@@ -294,6 +306,8 @@ public class ScrollView extends AppCompatActivity {
             mboton211, mboton212, mboton213, mboton214, mboton215, mboton216, mboton217, mboton218, mboton219, mboton220,
             mboton221, mboton222, mboton223, mboton224, mboton225, mboton226, mboton227, mboton228, mboton229, mboton230,
             mboton231, mboton232, mboton233, mboton234, mboton235, mboton236, mboton237, mboton238, mboton239, mboton240,
+            mboton241, mboton242, mboton243, mboton244, mboton245, mboton246, mboton247, mboton248, mboton249, mboton250,
+            mboton251, mboton252
     };
 
     private Question[] mQuestionBank = new Question[] {
@@ -356,7 +370,10 @@ public class ScrollView extends AppCompatActivity {
             new Question(R.string.question_text_57, 0),
             new Question(R.string.question_text_58, 0),
             new Question(R.string.question_text_59, 0),
-            new Question(R.string.question_text_60, 0)
+            new Question(R.string.question_text_60, 0),
+            new Question(R.string.question_text_61, 0),
+            new Question(R.string.question_text_62, 0),
+            new Question(R.string.question_text_63, 0)
 
     };
     int value;
@@ -365,23 +382,14 @@ public class ScrollView extends AppCompatActivity {
     int area3;
     int area4;
     int area5;
+    public Intent intent;
     private static final String TAG = "ScrollView";
-    /*
-    public static int[] botonesId = {
-     R.id.button1,
-            R.id.button2,
-            R.id.button3,
-            R.id.button4,
-            R.id.button6,
-            R.id.button7,
-            R.id.button8
-    };
-     */
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scrollview);
         Log.d(TAG, "onCreate(Bundle) called");
+
 
         // Obtener referencias a los botones
 
@@ -391,7 +399,7 @@ public class ScrollView extends AppCompatActivity {
         }
 
         // Configurar los listeners de clic para los botones
-        for (int i = 0; i< 240; i+=4){
+        for (int i = 0; i< 252; i+=4){
             setupButtonClickListener(buttons[i], buttons[i+1], buttons[i+2], buttons[i+3]);
         }
 
@@ -421,17 +429,16 @@ public class ScrollView extends AppCompatActivity {
          */
     }
     public void irResultados(View v){
-        //enviar datos
-        Bundle enviaDatos=new Bundle();
-        enviaDatos.putInt("area1", area1);
-        enviaDatos.putInt("area2", area2);
-        enviaDatos.putInt("area3", area3);
-        enviaDatos.putInt("area4", area4);
-        enviaDatos.putInt("area5", area5);
+        recogerYSumar(v);
+
 
         //iniciar actividad
-        Intent intent = new Intent(this, Resultados.class);
-        intent.putExtras(enviaDatos);
+        intent = new Intent(this, Resultados.class);
+        intent.putExtra("area1", String.valueOf(area1));
+        intent.putExtra("area2", String.valueOf(area2));
+        intent.putExtra("area3", String.valueOf(area3));
+        intent.putExtra("area4", String.valueOf(area4));
+        intent.putExtra("area5", String.valueOf(area5));
         startActivity(intent);
     }
 
@@ -499,8 +506,7 @@ public class ScrollView extends AppCompatActivity {
         if (item.getItemId() == R.id.item1){
             resetearActivity();
         }else{
-            Intent intent = new Intent(ScrollView.this, Inicio.class);
-            startActivity(intent);
+            finish();
         }
         return true;
     }
@@ -513,40 +519,80 @@ public class ScrollView extends AppCompatActivity {
     public void sumar(View v){
         //modulo4
         int id=v.getId();
-        int coc = id/4;
-        int rest= id%4;
-        switch (coc){
-            case 0: area1 += rest;
-            case 1: area2 += rest;
-            case 2: area3 += rest;
-            case 3: area4 += rest;
-            case 4: area5 += rest;
-            case 5: area1 += rest;
-            case 6: area2 += rest;
-            case 7: area3 += rest;
-            case 8: area4 += rest;
-            case 9: area5 += rest;
-            case 10: area1 += rest;
-            case 11: area2 += rest;
-            case 12: area3 += rest;
-            case 13: area4 += rest;
-            case 14: area5 += rest;
-            case 15: area1 += rest;
-            case 16: area2 += rest;
-            case 17: area3 += rest;
-            case 18: area4 += rest;
-            case 19: area5 += rest;
-            case 20: area1 += rest;
-            case 21: area2 += rest;
-            case 22: area3 += rest;
-            case 23: area4 += rest;
-            case 24: area5 += rest;
-            case 25: area1 += rest;
-            case 26: area2 += rest;
-            case 27: area3 += rest;
-            case 28: area4 += rest;
-            case 29: area5 += rest;
+        int coc = Math.floorDiv(id,4);
+        Log.d(TAG,"valor ID "+id);
+        if(coc>=0 && coc<=63){
+            mQuestionBank[coc].setAnswerValue(value);
+            Log.d(TAG,"valor añadido");
         }
-        Log.d(TAG, "sumado"+rest+"al area de la pregunta"+coc);
+
+
+
+        Log.d(TAG, "sumado"+value+"al area de la pregunta "+coc);
+    }
+    public void recogerYSumar(View v){
+        for (int i = 0; i<63;i++){
+            if (mQuestionBank[i].getTextResId() == 0 || mQuestionBank[i].getTextResId() ==5
+                    || mQuestionBank[i].getTextResId() == 10 || mQuestionBank[i].getTextResId() == 15
+                    || mQuestionBank[i].getTextResId() == 20 || mQuestionBank[i].getTextResId() == 25
+                    || mQuestionBank[i].getTextResId() == 30 || mQuestionBank[i].getTextResId() == 38
+                    || mQuestionBank[i].getTextResId() == 43 || mQuestionBank[i].getTextResId() == 44
+                    || mQuestionBank[i].getTextResId() == 50 || mQuestionBank[i].getTextResId() == 56
+                    || mQuestionBank[i].getTextResId() == 60 || mQuestionBank[i].getTextResId() == 61
+                    || mQuestionBank[i].getTextResId() == 62)
+            {
+                area1 += mQuestionBank[i].getAnswerValue();
+                Log.d(TAG, "area1 sumado");
+            }
+            if (mQuestionBank[i].getTextResId() == 1 || mQuestionBank[i].getTextResId() == 6
+                    || mQuestionBank[i].getTextResId() == 11 || mQuestionBank[i].getTextResId() == 16
+                    || mQuestionBank[i].getTextResId() == 21 || mQuestionBank[i].getTextResId() == 26
+                    || mQuestionBank[i].getTextResId() == 31 || mQuestionBank[i].getTextResId() == 39
+                    || mQuestionBank[i].getTextResId() == 40 || mQuestionBank[i].getTextResId() == 41
+                    || mQuestionBank[i].getTextResId() == 45 || mQuestionBank[i].getTextResId() == 46
+                    || mQuestionBank[i].getTextResId() == 51 || mQuestionBank[i].getTextResId() == 57
+                    || mQuestionBank[i].getTextResId() == 32)
+            {
+                area2 += mQuestionBank[i].getAnswerValue();
+                Log.d(TAG, "area2 sumado");
+            }
+            if (mQuestionBank[i].getTextResId() == 2 || mQuestionBank[i].getTextResId() == 7
+                    || mQuestionBank[i].getTextResId() == 12 || mQuestionBank[i].getTextResId() == 17
+                    || mQuestionBank[i].getTextResId() == 22 || mQuestionBank[i].getTextResId() == 27
+                    || mQuestionBank[i].getTextResId() == 32 || mQuestionBank[i].getTextResId() == 33
+                    || mQuestionBank[i].getTextResId() == 40 || mQuestionBank[i].getTextResId() == 41
+                    || mQuestionBank[i].getTextResId() == 59 || mQuestionBank[i].getTextResId() == 47
+                    || mQuestionBank[i].getTextResId() == 52 || mQuestionBank[i].getTextResId() == 53
+                    || mQuestionBank[i].getTextResId() == 58)
+            {
+                area3 += mQuestionBank[i].getAnswerValue();
+                Log.d(TAG, "area3 sumado");
+            }
+            if (mQuestionBank[i].getTextResId() == 3 || mQuestionBank[i].getTextResId() == 8
+                    || mQuestionBank[i].getTextResId() == 13 || mQuestionBank[i].getTextResId() == 18
+                    || mQuestionBank[i].getTextResId() == 23 || mQuestionBank[i].getTextResId() == 28
+                    || mQuestionBank[i].getTextResId() == 34 || mQuestionBank[i].getTextResId() == 35
+                    || mQuestionBank[i].getTextResId() == 36 || mQuestionBank[i].getTextResId() == 42
+                    || mQuestionBank[i].getTextResId() == 43 || mQuestionBank[i].getTextResId() == 49
+                    || mQuestionBank[i].getTextResId() == 53 || mQuestionBank[i].getTextResId() == 54
+                    || mQuestionBank[i].getTextResId() == 55)
+            {
+                area4 += mQuestionBank[i].getAnswerValue();
+                Log.d(TAG, "area4 sumado");
+            }
+            if (mQuestionBank[i].getTextResId() == 4 || mQuestionBank[i].getTextResId() == 9
+                    || mQuestionBank[i].getTextResId() == 14 || mQuestionBank[i].getTextResId() == 19
+                    || mQuestionBank[i].getTextResId() == 24 || mQuestionBank[i].getTextResId() == 29
+                    || mQuestionBank[i].getTextResId() == 34 || mQuestionBank[i].getTextResId() == 37
+                    || mQuestionBank[i].getTextResId() == 42 || mQuestionBank[i].getTextResId() == 43
+                    || mQuestionBank[i].getTextResId() == 48 || mQuestionBank[i].getTextResId() == 49
+                    || mQuestionBank[i].getTextResId() == 54 || mQuestionBank[i].getTextResId() == 55
+                    || mQuestionBank[i].getTextResId() == 35)
+            {
+                area5 += mQuestionBank[i].getAnswerValue();
+                Log.d(TAG, "area5 sumado");
+            }
+
+        }
     }
 }

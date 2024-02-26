@@ -75,10 +75,16 @@
 
     <string name="new_test">New Test</string>
 
-
     <string name="area1">Área 1:</string>
     <string name="area2">Área 2:</string>
     <string name="area3">Área 3:</string>
     <string name="area4">Área 4:</string>
     <string name="area5">Área 5:</string>
+
+    <string name="instruccionesTitulo">
+        Instrucciones
+    </string>
+    <string name="instruccionesTexto">
+                En la siguiente pantalla aparecerá un test que deberas responder con total sinceridad, para responder deberás presionar la casilla que más se ajuste a tu respuesta sobre la pregunta.
+    </string>
 </resources>

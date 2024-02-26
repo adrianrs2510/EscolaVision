@@ -22,7 +22,7 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@mipmap/ic_icono_foreground" />
+                app:srcCompat="@mipmap/ic_icono_oficial_2_round" />
 
             <TextView
                 android:id="@+id/textView61"
@@ -35,6 +35,29 @@
                 android:textSize="40sp" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="@string/instruccionesTitulo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView63"
+            style="@style/recipesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="50dp"
+            android:text="@string/instruccionesTexto"
+            android:textAlignment="textStart" />
 
         <Button
             android:id="@+id/buttonScroll"

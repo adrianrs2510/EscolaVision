@@ -53,13 +53,14 @@
     </style>
 
     <style name="recipesLayout" parent="Widget.Design.TabLayout">
-        <item name="android:layout_height">103dp</item>
+        <item name="android:layout_height">98dp</item>
     </style>
 
     <style name="recipesTextView">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingTop">8dp</item>
     </style>
 
 </resources>

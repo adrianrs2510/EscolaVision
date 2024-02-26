@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:background="@color/white"
@@ -91,13 +90,15 @@
                 android:text="@string/question_text_2"
                 android:textAlignment="textStart"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button5"
@@ -145,13 +146,15 @@
                 android:text="@string/question_text_3"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button9"
@@ -196,14 +199,16 @@
                 android:text="@string/question_text_4"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button13"
@@ -244,13 +249,15 @@
                 android:text="@string/question_text_5"
                 android:textAlignment="textStart"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button17"
@@ -291,13 +298,15 @@
                 android:layout_weight="1"
                 android:text="@string/question_text_6"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="103dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button21"
@@ -339,13 +348,15 @@
                 android:layout_weight="1"
                 android:text="@string/question_text_7"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp" />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button25"
@@ -387,13 +398,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/question_text_8"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+             >
 
                 <Button
                     android:id="@+id/button29"
@@ -434,13 +447,15 @@
                 android:layout_weight="1"
                 android:text="@string/question_text_9"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button33"
@@ -478,13 +493,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/question_text_10" />
+                android:text="@string/question_text_10"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button37"
@@ -521,13 +538,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_11" />
+                android:text="@string/question_text_11"
+                android:paddingTop="8dp" />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button41"
@@ -565,13 +584,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_12"  />
+                android:text="@string/question_text_12"
+                android:paddingTop="8dp" />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button45"
@@ -610,13 +631,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_13"  />
+                android:text="@string/question_text_13"
+            />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button49"
@@ -654,13 +677,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_14"  />
+                android:text="@string/question_text_14"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button53"
@@ -699,13 +724,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_15"  />
+                android:text="@string/question_text_15"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button57"
@@ -743,13 +770,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_16"  />
+                android:text="@string/question_text_16"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button61"
@@ -787,13 +816,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_17"  />
+                android:text="@string/question_text_17"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button65"
@@ -831,13 +862,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_18"  />
+                android:text="@string/question_text_18"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button69"
@@ -875,13 +908,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_19"  />
+                android:text="@string/question_text_19"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button73"
@@ -919,13 +954,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_20"  />
+                android:text="@string/question_text_20"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button77"
@@ -963,13 +1000,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_21"  />
+                android:text="@string/question_text_21"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button81"
@@ -1007,13 +1046,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_22"  />
+                android:text="@string/question_text_22"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button85"
@@ -1051,13 +1092,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_23"  />
+                android:text="@string/question_text_23"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button89"
@@ -1095,13 +1138,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_24"  />
+                android:text="@string/question_text_24"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button93"
@@ -1139,13 +1184,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_25"  />
+                android:text="@string/question_text_25"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button97"
@@ -1183,13 +1230,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_26"  />
+                android:text="@string/question_text_26"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button101"
@@ -1227,13 +1276,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_17"  />
+                android:text="@string/question_text_27"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button105"
@@ -1271,13 +1322,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_28"  />
+                android:text="@string/question_text_28"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button109"
@@ -1315,13 +1368,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_29"  />
+                android:text="@string/question_text_29"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button113"
@@ -1359,13 +1414,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_30"  />
+                android:text="@string/question_text_30"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button117"
@@ -1403,13 +1460,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_31"  />
+                android:text="@string/question_text_31"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button121"
@@ -1447,13 +1506,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_32"  />
+                android:text="@string/question_text_32"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button125"
@@ -1491,13 +1552,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_33"  />
+                android:text="@string/question_text_33"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button129"
@@ -1535,13 +1598,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_34"  />
+                android:text="@string/question_text_34"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button133"
@@ -1579,13 +1644,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_35"  />
+                android:text="@string/question_text_35"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button137"
@@ -1623,13 +1690,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_36"  />
+                android:text="@string/question_text_36"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button141"
@@ -1667,13 +1736,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_37"  />
+                android:text="@string/question_text_37"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button145"
@@ -1711,13 +1782,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_38"  />
+                android:text="@string/question_text_38"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button149"
@@ -1755,13 +1828,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_39"  />
+                android:text="@string/question_text_39"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button153"
@@ -1799,13 +1874,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_40"  />
+                android:text="@string/question_text_40"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button157"
@@ -1843,13 +1920,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_41"  />
+                android:text="@string/question_text_41"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button161"
@@ -1887,13 +1966,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_42"  />
+                android:text="@string/question_text_42"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button165"
@@ -1931,13 +2012,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_43"  />
+                android:text="@string/question_text_43"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button169"
@@ -1975,13 +2058,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_44"  />
+                android:text="@string/question_text_44"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button173"
@@ -2019,13 +2104,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_45"  />
+                android:text="@string/question_text_45"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button177"
@@ -2063,13 +2150,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_46"  />
+                android:text="@string/question_text_46"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button181"
@@ -2107,13 +2196,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_47"  />
+                android:text="@string/question_text_47"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button185"
@@ -2151,13 +2242,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_48"  />
+                android:text="@string/question_text_48"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button189"
@@ -2195,13 +2288,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_49"  />
+                android:text="@string/question_text_49"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button193"
@@ -2239,13 +2334,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_50"  />
+                android:paddingTop="8dp"
+                android:text="@string/question_text_50"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
 
                 <Button
                     android:id="@+id/button197"
@@ -2283,13 +2381,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_51"  />
+                android:text="@string/question_text_51"
+                android:paddingTop="8dp" />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button201"
@@ -2327,13 +2427,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_52"  />
+                android:text="@string/question_text_52"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button205"
@@ -2371,13 +2473,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_53"  />
+                android:text="@string/question_text_53"
+                android:paddingTop="8dp"/>
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button209"
@@ -2415,13 +2519,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_54"  />
+                android:text="@string/question_text_54"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button213"
@@ -2459,13 +2565,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_55"  />
+                android:text="@string/question_text_55"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button217"
@@ -2503,13 +2611,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_56"  />
+                android:text="@string/question_text_56"
+                />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button221"
@@ -2547,13 +2657,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_57"  />
+                android:text="@string/question_text_57"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button225"
@@ -2591,13 +2703,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_58"  />
+                android:text="@string/question_text_58"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button229"
@@ -2635,13 +2749,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_59"  />
+                android:text="@string/question_text_59"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+               >
 
                 <Button
                     android:id="@+id/button233"
@@ -2679,13 +2795,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/question_text_60"  />
+                android:text="@string/question_text_60"
+                 />
 
             <LinearLayout
                 style="@style/recipesLayout"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <Button
                     android:id="@+id/button237"
@@ -2717,13 +2835,158 @@
                     android:text="@string/button4" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/textView61"
+                style="@style/recipesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/question_text_61"
+                />
+
+            <LinearLayout
+                style="@style/recipesLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button241"
+                    style="@style/recipesButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button242"
+                    style="@style/recipesButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button243"
+                    style="@style/recipesButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button244"
+                    style="@style/recipesButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/button4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView62"
+                style="@style/recipesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/question_text_62"
+                />
+
+            <LinearLayout
+                style="@style/recipesLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button245"
+                    style="@style/recipesButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button246"
+                    style="@style/recipesButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button247"
+                    style="@style/recipesButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button248"
+                    style="@style/recipesButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/button4" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView63"
+                style="@style/recipesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/question_text_63"
+                />
+
+            <LinearLayout
+                style="@style/recipesLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button249"
+                    style="@style/recipesButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button250"
+                    style="@style/recipesButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button251"
+                    style="@style/recipesButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button252"
+                    style="@style/recipesButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/button4" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
             <Button
                 android:id="@+id/botonTerminarTest"
                 android:layout_width="match_parent"
                 android:layout_height="63dp"
                 android:background="@android:color/holo_blue_dark"
                 android:text="TERMINAR TEST" />
-
 
 
         </LinearLayout>

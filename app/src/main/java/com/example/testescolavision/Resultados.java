@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -45,6 +46,28 @@ public class Resultados extends AppCompatActivity {
         // Agrega más datos según sea necesario
         return datos;
     }
+*/
+
+
+
+    TextView result;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.resultados);
+    Bundle bundle = getIntent().getExtras();
+    result = (TextView) findViewById(R.id.resultadosint);
+    assert bundle != null;
+    String area1 = bundle.getString("area1");
+    String area2 = bundle.getString("area2");
+    int area3 = getIntent().getIntExtra("area3",0);
+    int area4 = getIntent().getIntExtra("area4",0);
+    int area5 = getIntent().getIntExtra("area5",0);
+    result.setText(area1);
+
+
+}
 
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -54,27 +77,8 @@ public class Resultados extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item)
     {
-       Intent intent = new Intent(Resultados.this, Inicio.class);
-       startActivity(intent);
+        Intent intent = new Intent(Resultados.this, Inicio.class);
+        startActivity(intent);
         return true;
     }
-
- */
-    TextView result;
-@SuppressLint("MissingInflatedId")
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.resultados);
-    Bundle recibeDatos = getIntent().getExtras();
-    int area1 = recibeDatos.getInt("area1");
-    int area2 = recibeDatos.getInt("area2");
-    int area3 = recibeDatos.getInt("area3");
-    int area4 = recibeDatos.getInt("area4");
-    int area5 = recibeDatos.getInt("area5");
-    result = findViewById(R.id.resultadosint);
-
-    result.setText(area1);
-}
-
 }
