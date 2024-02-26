@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBoton4;
     private Button mNextButton;
     private TextView mQuestionTextView;
-    private Question[] mQuestionBank = new Question[] {
+    /*private Question[] mQuestionBank = new Question[] {
             new Question(R.string.question_text_1, 0),
             new Question(R.string.question_text_2, 0),
             new Question(R.string.question_text_3, 0),
@@ -83,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
             new Question(R.string.question_text_60, 0)
 
     };
+
+     */
     private int mCurrentIndex = 0;
 
     int area1;

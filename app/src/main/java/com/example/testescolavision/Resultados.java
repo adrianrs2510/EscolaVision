@@ -80,6 +80,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
     result.setText(area1);
+
+
 }
 
 }

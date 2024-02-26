@@ -311,69 +311,69 @@ public class ScrollView extends AppCompatActivity {
     };
 
     private Question[] mQuestionBank = new Question[] {
-            new Question(R.string.question_text_1, 0),
-            new Question(R.string.question_text_2, 0),
-            new Question(R.string.question_text_3, 0),
-            new Question(R.string.question_text_4, 0),
-            new Question(R.string.question_text_5, 0),
-            new Question(R.string.question_text_6, 0),
-            new Question(R.string.question_text_7, 0),
-            new Question(R.string.question_text_8, 0),
-            new Question(R.string.question_text_9, 0),
-            new Question(R.string.question_text_10, 0),
-            new Question(R.string.question_text_11, 0),
-            new Question(R.string.question_text_12, 0),
-            new Question(R.string.question_text_13, 0),
-            new Question(R.string.question_text_14, 0),
-            new Question(R.string.question_text_15, 0),
-            new Question(R.string.question_text_16, 0),
-            new Question(R.string.question_text_17, 0),
-            new Question(R.string.question_text_18, 0),
-            new Question(R.string.question_text_19, 0),
-            new Question(R.string.question_text_20, 0),
-            new Question(R.string.question_text_21, 0),
-            new Question(R.string.question_text_22, 0),
-            new Question(R.string.question_text_23, 0),
-            new Question(R.string.question_text_24, 0),
-            new Question(R.string.question_text_25, 0),
-            new Question(R.string.question_text_26, 0),
-            new Question(R.string.question_text_27, 0),
-            new Question(R.string.question_text_28, 0),
-            new Question(R.string.question_text_29, 0),
-            new Question(R.string.question_text_30, 0),
-            new Question(R.string.question_text_31, 0),
-            new Question(R.string.question_text_32, 0),
-            new Question(R.string.question_text_33, 0),
-            new Question(R.string.question_text_34, 0),
-            new Question(R.string.question_text_35, 0),
-            new Question(R.string.question_text_36, 0),
-            new Question(R.string.question_text_37, 0),
-            new Question(R.string.question_text_38, 0),
-            new Question(R.string.question_text_39, 0),
-            new Question(R.string.question_text_40, 0),
-            new Question(R.string.question_text_41, 0),
-            new Question(R.string.question_text_42, 0),
-            new Question(R.string.question_text_43, 0),
-            new Question(R.string.question_text_44, 0),
-            new Question(R.string.question_text_45, 0),
-            new Question(R.string.question_text_46, 0),
-            new Question(R.string.question_text_47, 0),
-            new Question(R.string.question_text_48, 0),
-            new Question(R.string.question_text_49, 0),
-            new Question(R.string.question_text_50, 0),
-            new Question(R.string.question_text_51, 0),
-            new Question(R.string.question_text_52, 0),
-            new Question(R.string.question_text_53, 0),
-            new Question(R.string.question_text_54, 0),
-            new Question(R.string.question_text_55, 0),
-            new Question(R.string.question_text_56, 0),
-            new Question(R.string.question_text_57, 0),
-            new Question(R.string.question_text_58, 0),
-            new Question(R.string.question_text_59, 0),
-            new Question(R.string.question_text_60, 0),
-            new Question(R.string.question_text_61, 0),
-            new Question(R.string.question_text_62, 0),
-            new Question(R.string.question_text_63, 0)
+            new Question(R.string.question_text_1, 0,0),
+            new Question(R.string.question_text_2, 0,1),
+            new Question(R.string.question_text_3, 0,2),
+            new Question(R.string.question_text_4, 0,3),
+            new Question(R.string.question_text_5, 0,4),
+            new Question(R.string.question_text_6, 0,5),
+            new Question(R.string.question_text_7, 0,6),
+            new Question(R.string.question_text_8, 0,7),
+            new Question(R.string.question_text_9, 0,8),
+            new Question(R.string.question_text_10, 0,9),
+            new Question(R.string.question_text_11, 0,10),
+            new Question(R.string.question_text_12, 0,11),
+            new Question(R.string.question_text_13, 0,12),
+            new Question(R.string.question_text_14, 0,13),
+            new Question(R.string.question_text_15,0,14 ),
+            new Question(R.string.question_text_16, 0,15),
+            new Question(R.string.question_text_17, 0,16),
+            new Question(R.string.question_text_18, 0,17),
+            new Question(R.string.question_text_19, 0,18),
+            new Question(R.string.question_text_20, 0,19),
+            new Question(R.string.question_text_21, 0,20),
+            new Question(R.string.question_text_22, 0,21),
+            new Question(R.string.question_text_23, 0,22),
+            new Question(R.string.question_text_24, 0,23),
+            new Question(R.string.question_text_25, 0,24),
+            new Question(R.string.question_text_26, 0,25),
+            new Question(R.string.question_text_27, 0,26),
+            new Question(R.string.question_text_28, 0,27),
+            new Question(R.string.question_text_29, 0,28),
+            new Question(R.string.question_text_30, 0,29),
+            new Question(R.string.question_text_31, 0,30),
+            new Question(R.string.question_text_32, 0,31),
+            new Question(R.string.question_text_33, 0,32),
+            new Question(R.string.question_text_34, 0,33),
+            new Question(R.string.question_text_35, 0,34),
+            new Question(R.string.question_text_36, 0,35),
+            new Question(R.string.question_text_37, 0,36),
+            new Question(R.string.question_text_38, 0,37),
+            new Question(R.string.question_text_39, 0,38),
+            new Question(R.string.question_text_40, 0,39),
+            new Question(R.string.question_text_41, 0,40),
+            new Question(R.string.question_text_42, 0,41),
+            new Question(R.string.question_text_43, 0,42),
+            new Question(R.string.question_text_44, 0,43),
+            new Question(R.string.question_text_45, 0,44),
+            new Question(R.string.question_text_46, 0,45),
+            new Question(R.string.question_text_47, 0,46),
+            new Question(R.string.question_text_48, 0,47),
+            new Question(R.string.question_text_49, 0,48),
+            new Question(R.string.question_text_50, 0,49),
+            new Question(R.string.question_text_51, 0,50),
+            new Question(R.string.question_text_52,0,51),
+            new Question(R.string.question_text_53, 0,52),
+            new Question(R.string.question_text_54, 0,53),
+            new Question(R.string.question_text_55, 0,54),
+            new Question(R.string.question_text_56, 0,55),
+            new Question(R.string.question_text_57, 0,56),
+            new Question(R.string.question_text_58, 0,57),
+            new Question(R.string.question_text_59, 0,58),
+            new Question(R.string.question_text_60, 0,59),
+            new Question(R.string.question_text_61, 0,60),
+            new Question(R.string.question_text_62, 0,61),
+            new Question(R.string.question_text_63, 0,62)
 
     };
     int value;
@@ -430,8 +430,6 @@ public class ScrollView extends AppCompatActivity {
     }
     public void irResultados(View v){
         recogerYSumar(v);
-
-
         //iniciar actividad
         /*
         Bundle enviarDatos =new Bundle();
@@ -444,7 +442,7 @@ public class ScrollView extends AppCompatActivity {
          */
 
         intent = new Intent(this, Resultados.class);
-        intent.putExtra("area1", String.valueOf(area1));
+        intent.putExtra("area1", area1);
         intent.putExtra("area2", String.valueOf(area2));
         intent.putExtra("area3", String.valueOf(area3));
         intent.putExtra("area4", String.valueOf(area4));
@@ -517,8 +515,7 @@ public class ScrollView extends AppCompatActivity {
         if (item.getItemId() == R.id.item1){
             resetearActivity();
         }else{
-            Intent intent = new Intent(ScrollView.this, Inicio.class);
-            startActivity(intent);
+            finish();
         }
         return true;
     }
@@ -528,7 +525,7 @@ public class ScrollView extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void sumar(View v) {
+    public void sumar(View v){
         //modulo4
             String id2 = v.getTag().toString();
             int idint = Integer.parseInt(id2);
@@ -602,14 +599,14 @@ public class ScrollView extends AppCompatActivity {
         }
     public void recogerYSumar (View v) {
         for (int i = 0; i<63;i++){
-            if (mQuestionBank[i].getTextResId() == 0 || mQuestionBank[i].getTextResId() ==5
-                    || mQuestionBank[i].getTextResId() == 10 || mQuestionBank[i].getTextResId() == 15
-                    || mQuestionBank[i].getTextResId() == 20 || mQuestionBank[i].getTextResId() == 25
-                    || mQuestionBank[i].getTextResId() == 30 || mQuestionBank[i].getTextResId() == 38
-                    || mQuestionBank[i].getTextResId() == 43 || mQuestionBank[i].getTextResId() == 44
-                    || mQuestionBank[i].getTextResId() == 50 || mQuestionBank[i].getTextResId() == 56
-                    || mQuestionBank[i].getTextResId() == 60 || mQuestionBank[i].getTextResId() == 61
-                    || mQuestionBank[i].getTextResId() == 62)
+            if (mQuestionBank[i].getNumeroPregunta() == 0 || mQuestionBank[i].getNumeroPregunta() ==5
+                    || mQuestionBank[i].getNumeroPregunta() == 10 || mQuestionBank[i].getNumeroPregunta() == 15
+                    || mQuestionBank[i].getNumeroPregunta() == 20 || mQuestionBank[i].getNumeroPregunta() == 25
+                    || mQuestionBank[i].getNumeroPregunta() == 30 || mQuestionBank[i].getNumeroPregunta() == 38
+                    || mQuestionBank[i].getNumeroPregunta() == 43 || mQuestionBank[i].getNumeroPregunta() == 44
+                    || mQuestionBank[i].getNumeroPregunta() == 50 || mQuestionBank[i].getNumeroPregunta() == 56
+                    || mQuestionBank[i].getNumeroPregunta() == 60 || mQuestionBank[i].getNumeroPregunta() == 61
+                    || mQuestionBank[i].getNumeroPregunta() == 62)
             {
                 area1 += mQuestionBank[i].getAnswerValue();
                 Log.d(TAG, "area1 sumado");
