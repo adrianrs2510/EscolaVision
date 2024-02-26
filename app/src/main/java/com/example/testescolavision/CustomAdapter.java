@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-
+/*
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
     private List<Integer> dataList;
@@ -47,3 +47,4 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         return dataList.size();
     }
 }
+*/
