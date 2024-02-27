@@ -55,9 +55,14 @@ public class Resultados extends AppCompatActivity {
     }
 
 
-    TextView result;
+    TextView resultadoArea1;
+    TextView resultadoArea2;
+    TextView resultadoArea3;
+    TextView resultadoArea4;
+    TextView resultadoArea5;
     Bundle bundle;
-@SuppressLint({"MissingInflatedId", "SetTextI18n"})
+
+@SuppressLint("MissingInflatedId")
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -70,10 +75,17 @@ protected void onCreate(Bundle savedInstanceState) {
     String area4 = bundle.getString("area4");
     String area5 = bundle.getString("area5");
 
-    result = findViewById(R.id.resultadosint);
+    resultadoArea1 = (TextView) findViewById(R.id.resultadoArea1);
+    resultadoArea2 = (TextView) findViewById(R.id.resultadoArea2);
+    resultadoArea3 = (TextView) findViewById(R.id.resultadoArea3);
+    resultadoArea4 = (TextView) findViewById(R.id.resultadoArea4);
+    resultadoArea5 = (TextView) findViewById(R.id.resultadoArea5);
 
-
-    result.setText(area1);
+    resultadoArea1.setText(area1);
+    resultadoArea2.setText(area2);
+    resultadoArea3.setText(area3);
+    resultadoArea4.setText(area4);
+    resultadoArea5.setText(area5);
 
 
 }
