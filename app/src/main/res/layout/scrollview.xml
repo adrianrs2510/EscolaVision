@@ -73,7 +73,7 @@
                     android:layout_weight="1"
                     android:background="@color/amarillo"
                     android:text="@string/button3"
-                    android:tag="3"/>
+                    android:tag="2"/>
 
                 <Button
                     android:id="@+id/button4"
@@ -83,7 +83,7 @@
                     android:layout_weight="1"
                     android:background="@color/verde"
                     android:text="@string/button4"
-                    android:tag="4"/>
+                    android:tag="3"/>
             </LinearLayout>
 
             <TextView
@@ -115,7 +115,7 @@
                     android:padding="5dp"
                     android:text="@string/button1"
                     android:textSize="12sp"
-                    android:tag="5"/>
+                    android:tag="4"/>
 
                 <Button
                     android:id="@+id/button6"
@@ -124,7 +124,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button2"
-                    android:tag="6"/>
+                    android:tag="5"/>
 
                 <Button
                     android:id="@+id/button7"
@@ -133,7 +133,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button3"
-                    android:tag="7"/>
+                    android:tag="6"/>
 
                 <Button
                     android:id="@+id/button8"
@@ -141,7 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="7"/>
             </LinearLayout>
 
             <TextView
