@@ -358,7 +358,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="23"/>
 
             </LinearLayout>
 
@@ -384,7 +385,8 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button1" />
+                    android:text="@string/button1"
+                    android:tag="24"/>
 
                 <Button
                     android:id="@+id/button26"
@@ -392,7 +394,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button2" />
+                    android:text="@string/button2"
+                    android:tag="25"/>
 
                 <Button
                     android:id="@+id/button27"
@@ -400,7 +403,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button3" />
+                    android:text="@string/button3"
+                    android:tag="26"/>
 
                 <Button
                     android:id="@+id/button28"
@@ -408,7 +412,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="27"/>
 
             </LinearLayout>
 
@@ -434,7 +439,8 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button1" />
+                    android:text="@string/button1"
+                    android:tag="28"/>
 
                 <Button
                     android:id="@+id/button30"
@@ -442,7 +448,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button2" />
+                    android:text="@string/button2"
+                    android:tag="29"/>
 
                 <Button
                     android:id="@+id/button31"
@@ -450,7 +457,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button3" />
+                    android:text="@string/button3"
+                    android:tag="30"/>
 
                 <Button
                     android:id="@+id/button32"
@@ -458,7 +466,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="31"/>
             </LinearLayout>
 
             <TextView
@@ -482,21 +491,24 @@
                     android:id="@+id/button33"
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="32"/>
 
                 <Button
                     android:id="@+id/button34"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="33"/>
 
                 <Button
                     android:id="@+id/button35"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="34"/>
 
                 <Button
                     android:id="@+id/button36"
@@ -505,7 +517,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/button4"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:tag="35"/>
             </LinearLayout>
 
             <TextView
@@ -529,27 +542,31 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="36"/>
 
                 <Button
                     android:id="@+id/button38"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="37"/>
 
                 <Button
                     android:id="@+id/button39"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="38"/>
 
                 <Button
                     android:id="@+id/button40"
                     style="@style/recipesButton4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="39"/>
 
             </LinearLayout>
 
@@ -574,21 +591,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="40"/>
 
                 <Button
                     android:id="@+id/button42"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="41"/>
 
                 <Button
                     android:id="@+id/button43"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="42"/>
 
                 <Button
                     android:id="@+id/button44"
@@ -596,7 +616,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="43"/>
             </LinearLayout>
 
             <TextView
@@ -620,21 +641,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="44"/>
 
                 <Button
                     android:id="@+id/button46"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="45"/>
 
                 <Button
                     android:id="@+id/button47"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="46"/>
 
                 <Button
                     android:id="@+id/button48"
@@ -642,7 +666,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="47"/>
             </LinearLayout>
 
 
@@ -667,21 +692,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="48"/>
 
                 <Button
                     android:id="@+id/button50"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="49"/>
 
                 <Button
                     android:id="@+id/button51"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="50"/>
 
                 <Button
                     android:id="@+id/button52"
@@ -689,7 +717,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="51"/>
             </LinearLayout>
 
             <TextView
@@ -713,21 +742,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="52"/>
 
                 <Button
                     android:id="@+id/button54"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="53"/>
 
                 <Button
                     android:id="@+id/button55"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="54"/>
 
                 <Button
                     android:id="@+id/button56"
@@ -735,7 +767,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="55"/>
             </LinearLayout>
 
 
@@ -760,21 +793,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="56"/>
 
                 <Button
                     android:id="@+id/button58"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="57"/>
 
                 <Button
                     android:id="@+id/button59"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="58"/>
 
                 <Button
                     android:id="@+id/button60"
@@ -782,7 +818,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="59"/>
             </LinearLayout>
 
             <TextView
@@ -806,21 +843,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="60"/>
 
                 <Button
                     android:id="@+id/button62"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="61"/>
 
                 <Button
                     android:id="@+id/button63"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="62"/>
 
                 <Button
                     android:id="@+id/button64"
@@ -828,7 +868,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="63"/>
             </LinearLayout>
 
             <TextView
@@ -852,21 +893,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="64"/>
 
                 <Button
                     android:id="@+id/button66"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="65"/>
 
                 <Button
                     android:id="@+id/button67"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="66"/>
 
                 <Button
                     android:id="@+id/button68"
@@ -874,7 +918,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="67"/>
             </LinearLayout>
 
             <TextView
@@ -898,21 +943,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="68"/>
 
                 <Button
                     android:id="@+id/button70"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="69"/>
 
                 <Button
                     android:id="@+id/button71"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="70"/>
 
                 <Button
                     android:id="@+id/button72"
@@ -920,7 +968,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="71"/>
             </LinearLayout>
 
             <TextView
@@ -944,21 +993,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="72"/>
 
                 <Button
                     android:id="@+id/button74"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="73"/>
 
                 <Button
                     android:id="@+id/button75"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="74"/>
 
                 <Button
                     android:id="@+id/button76"
@@ -966,7 +1018,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="75"/>
             </LinearLayout>
 
             <TextView
@@ -990,21 +1043,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="76"/>
 
                 <Button
                     android:id="@+id/button78"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="77"/>
 
                 <Button
                     android:id="@+id/button79"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="78"/>
 
                 <Button
                     android:id="@+id/button80"
@@ -1012,7 +1068,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="79"/>
             </LinearLayout>
 
             <TextView
@@ -1036,21 +1093,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="80"/>
 
                 <Button
                     android:id="@+id/button82"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="81"/>
 
                 <Button
                     android:id="@+id/button83"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="82"/>
 
                 <Button
                     android:id="@+id/button84"
@@ -1058,7 +1118,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="83"/>
             </LinearLayout>
 
             <TextView
@@ -1082,21 +1143,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="84"/>
 
                 <Button
                     android:id="@+id/button86"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="85"/>
 
                 <Button
                     android:id="@+id/button87"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="86"/>
 
                 <Button
                     android:id="@+id/button88"
@@ -1104,7 +1168,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="87"/>
             </LinearLayout>
 
             <TextView
@@ -1128,21 +1193,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="88"/>
 
                 <Button
                     android:id="@+id/button90"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="89"/>
 
                 <Button
                     android:id="@+id/button91"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="90"/>
 
                 <Button
                     android:id="@+id/button92"
@@ -1150,7 +1218,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="91"/>
             </LinearLayout>
 
             <TextView
@@ -1174,21 +1243,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="92"/>
 
                 <Button
                     android:id="@+id/button94"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="93"/>
 
                 <Button
                     android:id="@+id/button95"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="94"/>
 
                 <Button
                     android:id="@+id/button96"
@@ -1196,7 +1268,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="95"/>
             </LinearLayout>
 
             <TextView
@@ -1220,21 +1293,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="96"/>
 
                 <Button
                     android:id="@+id/button98"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="97"/>
 
                 <Button
                     android:id="@+id/button99"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="98"/>
 
                 <Button
                     android:id="@+id/button100"
@@ -1242,7 +1318,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="99"/>
             </LinearLayout>
 
             <TextView
@@ -1266,21 +1343,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="100"/>
 
                 <Button
                     android:id="@+id/button102"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="101"/>
 
                 <Button
                     android:id="@+id/button103"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="102"/>
 
                 <Button
                     android:id="@+id/button104"
@@ -1288,7 +1368,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="103"/>
             </LinearLayout>
 
             <TextView
@@ -1312,21 +1393,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="104"/>
 
                 <Button
                     android:id="@+id/button106"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="105"/>
 
                 <Button
                     android:id="@+id/button107"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="106"/>
 
                 <Button
                     android:id="@+id/button108"
@@ -1334,7 +1418,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="107"/>
             </LinearLayout>
 
             <TextView
@@ -1358,21 +1443,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="108"/>
 
                 <Button
                     android:id="@+id/button110"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="109"/>
 
                 <Button
                     android:id="@+id/button111"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="110"/>
 
                 <Button
                     android:id="@+id/button112"
@@ -1380,7 +1468,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="111"/>
             </LinearLayout>
 
             <TextView
@@ -1404,21 +1493,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="112"/>
 
                 <Button
                     android:id="@+id/button114"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="113"/>
 
                 <Button
                     android:id="@+id/button115"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="114"/>
 
                 <Button
                     android:id="@+id/button116"
@@ -1426,7 +1518,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="115"/>
             </LinearLayout>
 
             <TextView
@@ -1450,21 +1543,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="116"/>
 
                 <Button
                     android:id="@+id/button118"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="117"/>
 
                 <Button
                     android:id="@+id/button119"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="118"/>
 
                 <Button
                     android:id="@+id/button120"
@@ -1472,7 +1568,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="119"/>
             </LinearLayout>
 
             <TextView
@@ -1496,21 +1593,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="120"/>
 
                 <Button
                     android:id="@+id/button122"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="121"/>
 
                 <Button
                     android:id="@+id/button123"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="122"/>
 
                 <Button
                     android:id="@+id/button124"
@@ -1518,7 +1618,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="123"/>
             </LinearLayout>
 
             <TextView
@@ -1542,21 +1643,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="124"/>
 
                 <Button
                     android:id="@+id/button126"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="125"/>
 
                 <Button
                     android:id="@+id/button127"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="126"/>
 
                 <Button
                     android:id="@+id/button128"
@@ -1564,7 +1668,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="127"/>
             </LinearLayout>
 
             <TextView
@@ -1588,21 +1693,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="128"/>
 
                 <Button
                     android:id="@+id/button130"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="129"/>
 
                 <Button
                     android:id="@+id/button131"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="130"/>
 
                 <Button
                     android:id="@+id/button132"
@@ -1610,7 +1718,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="131"/>
             </LinearLayout>
 
             <TextView
@@ -1634,21 +1743,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="132"/>
 
                 <Button
                     android:id="@+id/button134"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="133"/>
 
                 <Button
                     android:id="@+id/button135"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="134"/>
 
                 <Button
                     android:id="@+id/button136"
@@ -1656,7 +1768,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="135"/>
             </LinearLayout>
 
             <TextView
@@ -1680,21 +1793,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="136"/>
 
                 <Button
                     android:id="@+id/button138"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="137"/>
 
                 <Button
                     android:id="@+id/button139"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="138"/>
 
                 <Button
                     android:id="@+id/button140"
@@ -1702,7 +1818,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="139"/>
             </LinearLayout>
 
             <TextView
@@ -1726,21 +1843,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="140"/>
 
                 <Button
                     android:id="@+id/button142"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="141"/>
 
                 <Button
                     android:id="@+id/button143"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="142"/>
 
                 <Button
                     android:id="@+id/button144"
@@ -1748,7 +1868,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="143"/>
             </LinearLayout>
 
             <TextView
@@ -1772,21 +1893,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="144"/>
 
                 <Button
                     android:id="@+id/button146"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="145"/>
 
                 <Button
                     android:id="@+id/button147"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="146"/>
 
                 <Button
                     android:id="@+id/button148"
@@ -1794,7 +1918,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="147"/>
             </LinearLayout>
 
             <TextView
@@ -1818,21 +1943,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="148"/>
 
                 <Button
                     android:id="@+id/button150"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="149"/>
 
                 <Button
                     android:id="@+id/button151"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="150"/>
 
                 <Button
                     android:id="@+id/button152"
@@ -1840,7 +1968,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="151"/>
             </LinearLayout>
 
             <TextView
@@ -1864,21 +1993,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="152"/>
 
                 <Button
                     android:id="@+id/button154"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="153"/>
 
                 <Button
                     android:id="@+id/button155"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="154"/>
 
                 <Button
                     android:id="@+id/button156"
@@ -1886,7 +2018,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="155"/>
             </LinearLayout>
 
             <TextView
@@ -1910,21 +2043,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="156"/>
 
                 <Button
                     android:id="@+id/button158"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="157"/>
 
                 <Button
                     android:id="@+id/button159"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="158"/>
 
                 <Button
                     android:id="@+id/button160"
@@ -1932,7 +2068,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="159"/>
             </LinearLayout>
 
             <TextView
@@ -1956,21 +2093,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="160"/>
 
                 <Button
                     android:id="@+id/button162"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="161"/>
 
                 <Button
                     android:id="@+id/button163"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="162"/>
 
                 <Button
                     android:id="@+id/button164"
@@ -1978,7 +2118,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="163"/>
             </LinearLayout>
 
             <TextView
@@ -2002,21 +2143,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="164"/>
 
                 <Button
                     android:id="@+id/button166"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="165"/>
 
                 <Button
                     android:id="@+id/button167"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="166"/>
 
                 <Button
                     android:id="@+id/button168"
@@ -2024,7 +2168,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="167"/>
             </LinearLayout>
 
             <TextView
@@ -2048,21 +2193,24 @@
                     style="@style/recipesButton1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="168"/>
 
                 <Button
                     android:id="@+id/button170"
                     style="@style/recipesButton2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="169"/>
 
                 <Button
                     android:id="@+id/button171"
                     style="@style/recipesButton3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:tag="170"/>
 
                 <Button
                     android:id="@+id/button172"
@@ -2070,7 +2218,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button4" />
+                    android:text="@string/button4"
+                    android:tag="171"/>
             </LinearLayout>
 
             <TextView
