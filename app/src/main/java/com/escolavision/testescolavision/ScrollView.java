@@ -522,74 +522,18 @@ public class ScrollView extends AppCompatActivity {
             String id2 = v.getTag().toString();
             int idint = Integer.parseInt(id2);
             int coc2 = idint / 4;
-            int rest = idint % 4;
-            switch (coc2) {
-                case 0:
-                    mQuestionBank[0].setAnswerValue(value);
-                case 1:
-                    area2 += rest;
-                case 2:
-                    area3 += rest;
-                case 3:
-                    area4 += rest;
-                case 4:
-                    area5 += rest;
-                case 5:
-                    area1 += rest;
-                case 6:
-                    area2 += rest;
-                case 7:
-                    area3 += rest;
-                case 8:
-                    area4 += rest;
-                case 9:
-                    area5 += rest;
-                case 10:
-                    area1 += rest;
-                case 11:
-                    area2 += rest;
-                case 12:
-                    area3 += rest;
-                case 13:
-                    area4 += rest;
-                case 14:
-                    area5 += rest;
-                case 15:
-                    area1 += rest;
-                case 16:
-                    area2 += rest;
-                case 17:
-                    area3 += rest;
-                case 18:
-                    area4 += rest;
-                case 19:
-                    area5 += rest;
-                case 20:
-                    area1 += rest;
-                case 21:
-                    area2 += rest;
-                case 22:
-                    area3 += rest;
-                case 23:
-                    area4 += rest;
-                case 24:
-                    area5 += rest;
-                case 25:
-                    area1 += rest;
-                case 26:
-                    area2 += rest;
-                case 27:
-                    area3 += rest;
-                case 28:
-                    area4 += rest;
-                case 29:
-                    area5 += rest;
-            }
+        if (coc2 >= 0 && coc2 < mQuestionBank.length) {
+            mQuestionBank[coc2].setAnswerValue(value);
+        }
 
-
-            Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc2);
+        Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc2);
         }
     public void recogerYSumar (View v) {
+        area1 = 0;
+        area2 = 0;
+        area3 = 0;
+        area4 = 0;
+        area5 = 0;
         for (Question question : mQuestionBank) {
             int numeroPregunta = question.getNumeroPregunta();
             if (numeroPregunta == 0 || numeroPregunta == 5 || numeroPregunta == 10 || numeroPregunta == 15
@@ -630,6 +574,7 @@ public class ScrollView extends AppCompatActivity {
             } else if (numeroPregunta == 53) {
                 area3 += question.getAnswerValue();
                 area4 += question.getAnswerValue();
+                area5 += question.getAnswerValue();
             } else if (numeroPregunta == 34 || numeroPregunta == 35 || numeroPregunta == 42 || numeroPregunta == 49 || numeroPregunta == 54 || numeroPregunta == 55) {
                 area4 += question.getAnswerValue();
                 area5 += question.getAnswerValue();
