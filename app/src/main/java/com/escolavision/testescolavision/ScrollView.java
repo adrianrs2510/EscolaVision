@@ -443,14 +443,14 @@ public class ScrollView extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void setupButtonClickListener(Button redButton, Button orangeButton, Button yellowButton, Button greenButton) {
+    private void setupButtonClickListener(Button redButton, Button orangeButton, Button yellowButton, Button blueButton) {
         redButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setButtonBackground(redButton, R.drawable.button_red_bg);
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
-                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+                setButtonBackground(blueButton, R.drawable.button_azul_light_bg);
                 value = 0;
                 sumar(v);
             }
@@ -462,7 +462,7 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(redButton, R.drawable.button_red_light_bg);
                 setButtonBackground(orangeButton, R.drawable.button_orange_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
-                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+                setButtonBackground(blueButton, R.drawable.button_azul_light_bg);
                 value = 1;
                 sumar(v);
             }
@@ -474,19 +474,19 @@ public class ScrollView extends AppCompatActivity {
                 setButtonBackground(redButton, R.drawable.button_red_light_bg);
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_bg);
-                setButtonBackground(greenButton, R.drawable.button_verde_light_bg);
+                setButtonBackground(blueButton, R.drawable.button_azul_light_bg);
                 value = 2;
                 sumar(v);
             }
         });
 
-        greenButton.setOnClickListener(new View.OnClickListener() {
+        blueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setButtonBackground(redButton, R.drawable.button_red_light_bg);
                 setButtonBackground(orangeButton, R.drawable.button_orange_light_bg);
                 setButtonBackground(yellowButton, R.drawable.button_yellow_light_bg);
-                setButtonBackground(greenButton, R.drawable.button_verde_bg);
+                setButtonBackground(blueButton, R.drawable.button_azul_bg);
                 value = 3;
                 sumar(v);
             }
@@ -525,7 +525,7 @@ public class ScrollView extends AppCompatActivity {
             int rest = idint % 4;
             switch (coc2) {
                 case 0:
-                    area1 += rest;
+                    mQuestionBank[0].setAnswerValue(value);
                 case 1:
                     area2 += rest;
                 case 2:
@@ -590,66 +590,49 @@ public class ScrollView extends AppCompatActivity {
             Log.d(TAG, "sumado" + value + "al area de la pregunta " + coc2);
         }
     public void recogerYSumar (View v) {
-        for (int i = 0; i<63;i++){
-            if (mQuestionBank[i].getNumeroPregunta() == 0 || mQuestionBank[i].getNumeroPregunta() ==5
-                    || mQuestionBank[i].getNumeroPregunta() == 10 || mQuestionBank[i].getNumeroPregunta() == 15
-                    || mQuestionBank[i].getNumeroPregunta() == 20 || mQuestionBank[i].getNumeroPregunta() == 25
-                    || mQuestionBank[i].getNumeroPregunta() == 30 || mQuestionBank[i].getNumeroPregunta() == 38
-                    || mQuestionBank[i].getNumeroPregunta() == 43 || mQuestionBank[i].getNumeroPregunta() == 44
-                    || mQuestionBank[i].getNumeroPregunta() == 50 || mQuestionBank[i].getNumeroPregunta() == 56
-                    || mQuestionBank[i].getNumeroPregunta() == 60 || mQuestionBank[i].getNumeroPregunta() == 61
-                    || mQuestionBank[i].getNumeroPregunta() == 62)
-            {
-                area1 += mQuestionBank[i].getAnswerValue();
+        for (Question question : mQuestionBank) {
+            int numeroPregunta = question.getNumeroPregunta();
+            if (numeroPregunta == 0 || numeroPregunta == 5 || numeroPregunta == 10 || numeroPregunta == 15
+                    || numeroPregunta == 20 || numeroPregunta == 25 || numeroPregunta == 30 || numeroPregunta == 38
+                    || numeroPregunta == 44 || numeroPregunta == 50 || numeroPregunta == 56
+                    || numeroPregunta == 60 || numeroPregunta == 61 || numeroPregunta == 62) {
+                area1 += question.getAnswerValue();
                 Log.d(TAG, "area1 sumado");
-            }
-            if (mQuestionBank[i].getNumeroPregunta() == 1 || mQuestionBank[i].getNumeroPregunta() == 6
-                    || mQuestionBank[i].getNumeroPregunta() == 11 || mQuestionBank[i].getNumeroPregunta() == 16
-                    || mQuestionBank[i].getNumeroPregunta() == 21 || mQuestionBank[i].getNumeroPregunta() == 26
-                    || mQuestionBank[i].getNumeroPregunta() == 31 || mQuestionBank[i].getNumeroPregunta() == 39
-                    || mQuestionBank[i].getNumeroPregunta() == 40 || mQuestionBank[i].getNumeroPregunta() == 41
-                    || mQuestionBank[i].getNumeroPregunta() == 45 || mQuestionBank[i].getNumeroPregunta() == 46
-                    || mQuestionBank[i].getNumeroPregunta() == 51 || mQuestionBank[i].getNumeroPregunta() == 57
-                    || mQuestionBank[i].getNumeroPregunta() == 32)
-            {
-                area2 += mQuestionBank[i].getAnswerValue();
+            } else if (numeroPregunta == 1 || numeroPregunta == 6 || numeroPregunta == 11 || numeroPregunta == 16
+                    || numeroPregunta == 21 || numeroPregunta == 26 || numeroPregunta == 31 || numeroPregunta == 39
+                    || numeroPregunta == 45 || numeroPregunta == 46
+                    || numeroPregunta == 51 || numeroPregunta == 57) {
+                area2 += question.getAnswerValue();
                 Log.d(TAG, "area2 sumado");
-            }
-            if (mQuestionBank[i].getNumeroPregunta() == 2 || mQuestionBank[i].getNumeroPregunta() == 7
-                    || mQuestionBank[i].getNumeroPregunta() == 12 || mQuestionBank[i].getNumeroPregunta() == 17
-                    || mQuestionBank[i].getNumeroPregunta() == 22 || mQuestionBank[i].getNumeroPregunta() == 27
-                    || mQuestionBank[i].getNumeroPregunta() == 32 || mQuestionBank[i].getNumeroPregunta() == 33
-                    || mQuestionBank[i].getNumeroPregunta() == 40 || mQuestionBank[i].getNumeroPregunta() == 41
-                    || mQuestionBank[i].getNumeroPregunta() == 59 || mQuestionBank[i].getNumeroPregunta() == 47
-                    || mQuestionBank[i].getNumeroPregunta() == 52 || mQuestionBank[i].getNumeroPregunta() == 53
-                    || mQuestionBank[i].getNumeroPregunta() == 58)
-            {
-                area3 += mQuestionBank[i].getAnswerValue();
+            } else if (numeroPregunta == 2 || numeroPregunta == 7 || numeroPregunta == 12 || numeroPregunta == 17
+                    || numeroPregunta == 22 || numeroPregunta == 27 || numeroPregunta == 33
+                     || numeroPregunta == 59 || numeroPregunta == 47
+                    || numeroPregunta == 52 || numeroPregunta == 58) {
+                area3 += question.getAnswerValue();
                 Log.d(TAG, "area3 sumado");
-            }
-            if (mQuestionBank[i].getNumeroPregunta() == 3 || mQuestionBank[i].getNumeroPregunta() == 8
-                    || mQuestionBank[i].getNumeroPregunta() == 13 || mQuestionBank[i].getNumeroPregunta() == 18
-                    || mQuestionBank[i].getNumeroPregunta() == 23 || mQuestionBank[i].getNumeroPregunta() == 28
-                    || mQuestionBank[i].getNumeroPregunta() == 34 || mQuestionBank[i].getNumeroPregunta() == 35
-                    || mQuestionBank[i].getNumeroPregunta() == 36 || mQuestionBank[i].getNumeroPregunta() == 42
-                    || mQuestionBank[i].getNumeroPregunta() == 43 || mQuestionBank[i].getNumeroPregunta() == 49
-                    || mQuestionBank[i].getNumeroPregunta() == 53 || mQuestionBank[i].getNumeroPregunta() == 54
-                    || mQuestionBank[i].getNumeroPregunta() == 55)
-            {
-                area4 += mQuestionBank[i].getAnswerValue();
+            } else if (numeroPregunta == 3 || numeroPregunta == 8 || numeroPregunta == 13 || numeroPregunta == 18
+                    || numeroPregunta == 23 || numeroPregunta == 28
+                    || numeroPregunta == 36 ) {
+                area4 += question.getAnswerValue();
                 Log.d(TAG, "area4 sumado");
-            }
-            if (mQuestionBank[i].getNumeroPregunta() == 4 || mQuestionBank[i].getTextResId() == 9
-                    || mQuestionBank[i].getNumeroPregunta() == 14 || mQuestionBank[i].getNumeroPregunta() == 19
-                    || mQuestionBank[i].getNumeroPregunta() == 24 || mQuestionBank[i].getNumeroPregunta() == 29
-                    || mQuestionBank[i].getNumeroPregunta() == 34 || mQuestionBank[i].getNumeroPregunta() == 37
-                    || mQuestionBank[i].getNumeroPregunta() == 42 || mQuestionBank[i].getNumeroPregunta() == 43
-                    || mQuestionBank[i].getNumeroPregunta() == 48 || mQuestionBank[i].getNumeroPregunta() == 49
-                    || mQuestionBank[i].getNumeroPregunta() == 54 || mQuestionBank[i].getNumeroPregunta() == 55
-                    || mQuestionBank[i].getNumeroPregunta() == 35)
-            {
-                area5 += mQuestionBank[i].getAnswerValue();
+            } else if (numeroPregunta == 4 || question.getTextResId() == 9 || numeroPregunta == 14 || numeroPregunta == 19
+                    || numeroPregunta == 24 || numeroPregunta == 29  || numeroPregunta == 37
+                     || numeroPregunta == 48) {
+                area5 += question.getAnswerValue();
                 Log.d(TAG, "area5 sumado");
+            } else if (numeroPregunta == 43) {
+                area1 += question.getAnswerValue();
+                area4 += question.getAnswerValue();
+                area5 += question.getAnswerValue();
+            } else if (numeroPregunta == 40 || numeroPregunta == 41 || numeroPregunta == 32) {
+                area2 += question.getAnswerValue();
+                area3 += question.getAnswerValue();
+            } else if (numeroPregunta == 53) {
+                area3 += question.getAnswerValue();
+                area4 += question.getAnswerValue();
+            } else if (numeroPregunta == 34 || numeroPregunta == 35 || numeroPregunta == 42 || numeroPregunta == 49 || numeroPregunta == 54 || numeroPregunta == 55) {
+                area4 += question.getAnswerValue();
+                area5 += question.getAnswerValue();
             }
 
         }

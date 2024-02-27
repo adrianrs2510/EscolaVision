@@ -81,9 +81,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/verde"
-                    android:text="@string/button4"
-                    android:tag="3"/>
+                    android:tag="3"
+                    android:text="@string/button4" />
             </LinearLayout>
 
             <TextView
