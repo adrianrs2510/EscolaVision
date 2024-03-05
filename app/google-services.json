@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "500364413138",
+    "project_id": "escolavision-hlanz",
+    "storage_bucket": "escolavision-hlanz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500364413138:android:63f9a5285ab6e11806450b",
+        "android_client_info": {
+          "package_name": "com.escolavision.testescolavision"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq1jShD6BoPZ60N840MIMVk7lANNIpnTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
