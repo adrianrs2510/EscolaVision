@@ -19,4 +19,5 @@
     <color name="naranja_claro">#F8AD58</color>
     <color name="azul_claro">#C5F2FD</color>
     <color name="azul">#00AEEF</color>
+    <color name="azulBoton">@android:color/holo_blue_dark</color>
 </resources>

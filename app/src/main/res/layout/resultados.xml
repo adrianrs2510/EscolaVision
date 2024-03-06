@@ -40,8 +40,8 @@
                     android:layout_width="220dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:text="Área 1 :"
+                    android:background="@drawable/rounded_corner_view"
+                    android:text="Área 1"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="48sp" />
@@ -76,8 +76,8 @@
                     android:layout_width="220dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:text="Área 2 :"
+                    android:background="@drawable/rounded_corner_view"
+                    android:text="Área 2"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="48sp" />
@@ -112,8 +112,8 @@
                     android:layout_width="220dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:text="Área 3 :"
+                    android:background="@drawable/rounded_corner_view"
+                    android:text="Área 3"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="48sp" />
@@ -144,11 +144,12 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/area4"
                     android:layout_width="220dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:text="Área 4 :"
+                    android:background="@drawable/rounded_corner_view"
+                    android:text="Área 4"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="48sp" />
@@ -178,11 +179,12 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/area5"
                     android:layout_width="220dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_blue_dark"
-                    android:text="Área 5 :"
+                    android:background="@drawable/rounded_corner_view"
+                    android:text="Área 5"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="48sp" />
@@ -240,7 +242,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Pulsando sobre el símbolo de + información al lado de cada área, te lleva a una página web externa explicando cada una."
+                    android:text="Pulsando sobre el símbolo de información junto a cada área, este te llevará a una página web externa explicando cada una."
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="17sp" />

@@ -2,6 +2,7 @@ package com.escolavision.testescolavision;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +19,12 @@ public class Resultados extends AppCompatActivity {
     TextView resultadoArea3;
     TextView resultadoArea4;
     TextView resultadoArea5;
+
+    TextView area11;
+    TextView area22;
+    TextView area33;
+    TextView area44;
+    TextView area55;
     Bundle bundle;
     ImageView informacionArea1;
     ImageView informacionArea2;
@@ -26,6 +33,8 @@ public class Resultados extends AppCompatActivity {
     ImageView informacionArea5;
     Button repetirTest;
     Button irAInicio;
+
+
 
 
 
@@ -50,19 +59,40 @@ protected void onCreate(Bundle savedInstanceState) {
     resultadoArea5 = (TextView) findViewById(R.id.resultadoArea5);
     repetirTest = (Button) findViewById(R.id.repetirTest);
     irAInicio = (Button) findViewById(R.id.volverInicio);
+    area11 = (TextView) findViewById(R.id.textView71);
+    area22 = (TextView) findViewById(R.id.textView67);
+    area33 = (TextView) findViewById(R.id.textView69);
+    area44 = (TextView) findViewById(R.id.area4);
+    area55 = (TextView) findViewById(R.id.area5);
+
 
     resultadoArea1.setText(area1);
     resultadoArea2.setText(area2);
     resultadoArea3.setText(area3);
     resultadoArea4.setText(area4);
     resultadoArea5.setText(area5);
-
+    area11.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area1.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);
+        }
+    });
 
     informacionArea1 = findViewById(R.id.infoArea1);
     informacionArea1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area1.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);
+        }
+    });
+    area22.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area2.html");
             Intent intent = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(intent);
         }
@@ -78,6 +108,14 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
 
+    area33.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area3.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);
+        }
+    });
     informacionArea3 = findViewById(R.id.infoArea3);
     informacionArea3.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -87,7 +125,14 @@ protected void onCreate(Bundle savedInstanceState) {
             startActivity(intent);
         }
     });
-
+    area44.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area4.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);
+        }
+    });
     informacionArea4 = findViewById(R.id.infoArea4);
     informacionArea4.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -98,6 +143,14 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
 
+    area55.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Uri uri = Uri.parse("https://escolavision.github.io/EscolaVision/area5.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(intent);
+        }
+    });
     informacionArea5 = findViewById(R.id.infoArea5);
     informacionArea5.setOnClickListener(new View.OnClickListener() {
         @Override
