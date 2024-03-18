@@ -12,8 +12,8 @@ android {
         applicationId = "com.escolavision.testescolavision"
         minSdk = 24
         targetSdk = 34
-        versionCode = 10
-        versionName = "10.0"
+        versionCode = 15
+        versionName = "15.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
